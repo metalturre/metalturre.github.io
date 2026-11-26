@@ -1,0 +1,1751 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>产品一物一码溯源系统_一物一码防伪溯源平台_企业产品全链路追溯解决方案</title>
+<meta name="description" content="码链溯源是专注产品一物一码溯源系统的企业级品牌平台，提供防伪、防窜、全链路追溯与营销互动一体化解决方案，官方网站汇集原创高清视频教程、行业观察与客户口碑，助力品牌构建值得信赖的产品内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23143a5c'/%3E%3Cpath d='M14 20h8v8h-8zm0 16h8v8h-8zm14-16h8v8h-8zm14 0h8v8h-8zm0 16h8v8h-8zm0 8h8v8h-8zm-14 0h8v8h-8z' fill='%2334d0a0'/%3E%3C/svg%3E">
+<style>
+:root{
+  --cl-navy:#0f2c46;
+  --cl-navy-deep:#0a1f33;
+  --cl-blue:#1c5b8c;
+  --cl-teal:#18b58a;
+  --cl-teal-soft:#e3f7f0;
+  --cl-ink:#152535;
+  --cl-muted:#5b7085;
+  --cl-line:#d8e2ea;
+  --cl-bg:#f3f7fa;
+  --cl-white:#ffffff;
+  --cl-amber:#f0a53c;
+  --radius-lg:18px;
+  --radius-md:12px;
+  --radius-sm:8px;
+  --shadow-card:0 8px 26px rgba(15,44,70,.09);
+  --shadow-hover:0 16px 38px rgba(15,44,70,.16);
+  --font-main:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:var(--font-main);
+  color:var(--cl-ink);
+  background:var(--cl-bg);
+  line-height:1.75;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%;}
+a{color:inherit;text-decoration:none;}
+ul,ol{list-style:none;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;}
+input{font-family:inherit;}
+
+.ml-wrap{width:min(1180px,92%);margin:0 auto;}
+
+/* ===== 吸顶区 ===== */
+.ml-sticky-zone{
+  position:sticky;top:0;z-index:120;
+  box-shadow:0 2px 14px rgba(15,44,70,.10);
+}
+.ml-notice-bar{
+  background:linear-gradient(90deg,#0f2c46 0%,#1c5b8c 60%,#18b58a 130%);
+  color:#eaf6ff;
+  font-size:13.5px;
+  padding:8px 0;
+}
+.ml-notice-bar .ml-wrap{display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+.ml-notice-tag{
+  flex:0 0 auto;
+  background:rgba(255,255,255,.16);
+  border:1px solid rgba(255,255,255,.34);
+  border-radius:999px;
+  padding:1px 10px;
+  font-size:12px;
+  letter-spacing:.06em;
+}
+.ml-notice-text{flex:1 1 320px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.ml-notice-text b{color:#8df3d2;font-weight:600;}
+.ml-notice-link{flex:0 0 auto;font-size:12.5px;color:#b8f5e2;border-bottom:1px dashed rgba(184,245,226,.6);padding-bottom:1px;}
+
+.ml-header{background:rgba(255,255,255,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--cl-line);}
+.ml-header .ml-wrap{display:flex;align-items:center;gap:26px;min-height:68px;}
+.ml-brand{display:flex;align-items:center;gap:11px;flex:0 0 auto;}
+.ml-brand-mark{width:40px;height:40px;flex:0 0 auto;}
+.ml-brand-name{font-size:20px;font-weight:800;letter-spacing:.04em;color:var(--cl-navy);line-height:1.2;}
+.ml-brand-name small{display:block;font-size:10.5px;letter-spacing:.26em;color:var(--cl-muted);font-weight:500;}
+.ml-nav{display:flex;align-items:center;gap:4px;margin-left:8px;flex:1 1 auto;flex-wrap:wrap;}
+.ml-nav a{
+  padding:7px 13px;border-radius:999px;font-size:14.5px;color:#2d4356;
+  transition:background .2s,color .2s;white-space:nowrap;
+}
+.ml-nav a:hover{background:var(--cl-teal-soft);color:var(--cl-blue);}
+.ml-header-tools{display:flex;align-items:center;gap:10px;flex:0 0 auto;}
+.ml-search{
+  display:flex;align-items:center;gap:6px;
+  background:var(--cl-bg);border:1px solid var(--cl-line);border-radius:999px;
+  padding:4px 6px 4px 14px;width:230px;transition:border-color .2s,box-shadow .2s;
+}
+.ml-search:focus-within{border-color:var(--cl-teal);box-shadow:0 0 0 3px rgba(24,181,138,.16);}
+.ml-search input{border:none;background:none;outline:none;font-size:13.5px;width:100%;color:var(--cl-ink);}
+.ml-search input::placeholder{color:#93a5b5;}
+.ml-search button{
+  flex:0 0 auto;background:var(--cl-navy);color:#fff;font-size:12.5px;
+  border-radius:999px;padding:5px 13px;transition:background .2s;
+}
+.ml-search button:hover{background:var(--cl-blue);}
+.ml-search-feedback{
+  font-size:12.5px;color:var(--cl-blue);flex:1 1 100%;
+  margin-top:4px;display:none;
+}
+.ml-search-feedback.ml-show{display:block;}
+.ml-btn-primary{
+  display:inline-flex;align-items:center;gap:7px;
+  background:linear-gradient(120deg,var(--cl-teal) 0%,#0f9a76 100%);
+  color:#fff;font-size:14px;font-weight:600;border-radius:999px;padding:9px 20px;
+  box-shadow:0 6px 16px rgba(24,181,138,.32);transition:transform .2s,box-shadow .2s;
+}
+.ml-btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 24px rgba(24,181,138,.38);}
+.ml-burger{display:none;width:42px;height:42px;border-radius:10px;background:var(--cl-bg);border:1px solid var(--cl-line);align-items:center;justify-content:center;}
+.ml-burger span{display:block;width:19px;height:2px;background:var(--cl-navy);position:relative;}
+.ml-burger span::before,.ml-burger span::after{content:"";position:absolute;left:0;width:19px;height:2px;background:var(--cl-navy);}
+.ml-burger span::before{top:-6px;}
+.ml-burger span::after{top:6px;}
+
+/* 锚点偏移 */
+.ml-anchor{scroll-margin-top:118px;}
+
+/* ===== 首屏 ===== */
+.ml-hero{
+  padding:58px 0 64px;
+  background:
+    radial-gradient(900px 420px at 88% 0%,rgba(24,181,138,.16),transparent 62%),
+    radial-gradient(700px 380px at 6% 96%,rgba(28,91,140,.14),transparent 60%),
+    linear-gradient(180deg,#ffffff 0%,#eef5f9 100%);
+  border-bottom:1px solid var(--cl-line);
+}
+.ml-hero-grid{display:grid;grid-template-columns:6fr 4fr;gap:46px;align-items:center;}
+.ml-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  background:#fff;border:1px solid #cfe6dd;border-radius:999px;
+  padding:5px 14px;font-size:12.5px;color:#0f8a6b;font-weight:600;letter-spacing:.04em;
+  box-shadow:0 4px 14px rgba(24,181,138,.12);
+}
+.ml-eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--cl-teal);box-shadow:0 0 0 4px rgba(24,181,138,.18);}
+.ml-hero h1{
+  font-size:clamp(30px,3.9vw,48px);line-height:1.24;font-weight:800;
+  color:var(--cl-navy);margin:20px 0 16px;letter-spacing:.01em;
+}
+.ml-hero h1 em{
+  font-style:normal;
+  background:linear-gradient(100deg,var(--cl-teal) 10%,var(--cl-blue) 90%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.ml-hero-lead{font-size:16.5px;color:#3c5466;max-width:37em;}
+.ml-hero-intro{
+  margin-top:18px;font-size:14.5px;color:var(--cl-muted);
+  border-left:3px solid var(--cl-teal);padding-left:14px;line-height:1.85;
+}
+.ml-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px;}
+.ml-btn-ghost{
+  display:inline-flex;align-items:center;gap:7px;
+  border:1.5px solid #bfd3e0;color:var(--cl-navy);background:#fff;
+  font-size:14px;font-weight:600;border-radius:999px;padding:8px 19px;
+  transition:border-color .2s,color .2s,transform .2s;
+}
+.ml-btn-ghost:hover{border-color:var(--cl-blue);color:var(--cl-blue);transform:translateY(-2px);}
+.ml-hero-stats{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;
+  margin-top:32px;max-width:520px;
+}
+.ml-stat{background:#fff;border:1px solid var(--cl-line);border-radius:var(--radius-md);padding:14px 16px;box-shadow:0 4px 16px rgba(15,44,70,.05);}
+.ml-stat b{display:block;font-size:25px;font-weight:800;color:var(--cl-blue);line-height:1.1;letter-spacing:.01em;}
+.ml-stat b span{font-size:14px;font-weight:600;color:var(--cl-muted);margin-left:2px;}
+.ml-stat small{display:block;font-size:12.5px;color:var(--cl-muted);margin-top:5px;}
+
+.ml-hero-visual{position:relative;}
+.ml-hero-visual figure{
+  border-radius:var(--radius-lg);overflow:hidden;
+  box-shadow:0 26px 60px rgba(15,44,70,.22);border:1px solid #dbe7ef;background:#fff;
+}
+.ml-hero-visual svg{width:100%;height:auto;aspect-ratio:16/13;}
+.ml-float-card{
+  position:absolute;left:-16px;bottom:-18px;
+  background:#fff;border-radius:14px;border:1px solid #dbe7ef;
+  padding:12px 16px;box-shadow:0 14px 32px rgba(15,44,70,.18);
+  font-size:12.5px;color:var(--cl-muted);max-width:230px;
+}
+.ml-float-card b{display:block;font-size:15px;color:var(--cl-navy);margin-bottom:2px;}
+.ml-float-card .ml-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--cl-teal);margin-right:5px;}
+
+/* ===== 通用 section ===== */
+.ml-section{padding:62px 0;}
+.ml-section-alt{background:#fff;border-top:1px solid var(--cl-line);border-bottom:1px solid var(--cl-line);}
+.ml-section-dark{background:linear-gradient(160deg,#0f2c46 0%,#123553 55%,#0a1f33 100%);color:#dbe9f3;}
+.ml-head{margin-bottom:34px;max-width:800px;}
+.ml-kicker{
+  font-size:12.5px;font-weight:700;letter-spacing:.24em;color:var(--cl-teal);
+  text-transform:uppercase;display:flex;align-items:center;gap:10px;
+}
+.ml-kicker::after{content:"";height:1px;flex:1 1 auto;background:linear-gradient(90deg,rgba(24,181,138,.55),transparent);max-width:180px;}
+.ml-head h2{
+  font-size:clamp(23px,2.6vw,32px);font-weight:800;color:var(--cl-navy);
+  margin:12px 0 10px;line-height:1.32;
+}
+.ml-head p{color:var(--cl-muted);font-size:15px;}
+.ml-section-dark .ml-head h2{color:#fff;}
+.ml-section-dark .ml-head p{color:#a8c2d6;}
+
+/* 卡片通用 */
+.ml-card{
+  background:#fff;border:1px solid var(--cl-line);border-radius:var(--radius-lg);
+  overflow:hidden;transition:transform .25s,box-shadow .25s,border-color .25s;
+  display:flex;flex-direction:column;min-width:0;
+}
+.ml-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-hover);border-color:#bfd8e8;}
+.ml-card-body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:9px;flex:1 1 auto;min-width:0;}
+.ml-card-body h3{font-size:16.5px;font-weight:700;color:var(--cl-navy);line-height:1.45;}
+.ml-card-body p{font-size:13.8px;color:var(--cl-muted);line-height:1.72;}
+.ml-tags{display:flex;flex-wrap:wrap;gap:6px;}
+.ml-tag{
+  font-size:11.5px;color:#166e58;background:var(--cl-teal-soft);
+  border-radius:999px;padding:2px 9px;white-space:nowrap;
+}
+.ml-tag-blue{color:#1c5b8c;background:#e6f0f8;}
+.ml-meta{
+  display:flex;flex-wrap:wrap;align-items:center;gap:12px;
+  font-size:12.3px;color:#8297a8;margin-top:auto;padding-top:4px;
+}
+.ml-meta .ml-author{color:var(--cl-blue);font-weight:600;}
+.ml-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;}
+.ml-act{
+  font-size:12.3px;color:#4a6276;background:#f5f9fb;border:1px solid var(--cl-line);
+  border-radius:999px;padding:4px 11px;display:inline-flex;align-items:center;gap:5px;
+  transition:background .18s,color .18s,border-color .18s;
+}
+.ml-act:hover{background:var(--cl-teal-soft);color:#0f8a6b;border-color:#b6e5d5;}
+.ml-act.ml-on{background:#e6f0f8;color:var(--cl-blue);border-color:#bcd7ea;font-weight:600;}
+.ml-act.ml-fav.ml-on{background:#fdecec;color:#cf3f3f;border-color:#f6c9c9;}
+.ml-play{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,rgba(10,31,51,0) 45%,rgba(10,31,51,.42) 100%);
+  transition:background .25s;
+}
+.ml-play span{
+  width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.92);
+  display:flex;align-items:center;justify-content:center;color:var(--cl-navy);
+  font-size:15px;box-shadow:0 6px 20px rgba(0,0,0,.22);transition:transform .25s;
+}
+.ml-card:hover .ml-play span{transform:scale(1.12);}
+.ml-cover{position:relative;overflow:hidden;background:#e9f1f6;}
+.ml-cover svg{width:100%;height:auto;}
+
+/* 视频区：重点大图 + 文字列表 */
+.ml-video-layout{display:grid;grid-template-columns:5fr 6fr;gap:30px;align-items:start;}
+.ml-feature-card{display:flex;flex-direction:column;}
+.ml-feature-card .ml-cover svg{aspect-ratio:16/9;}
+.ml-feature-card .ml-card-body h3{font-size:20px;}
+.ml-video-list{display:flex;flex-direction:column;gap:0;background:#fff;border:1px solid var(--cl-line);border-radius:var(--radius-lg);overflow:hidden;}
+.ml-video-item{
+  display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;
+  padding:16px 20px;border-bottom:1px solid #edf3f7;transition:background .18s;
+}
+.ml-video-item:last-child{border-bottom:none;}
+.ml-video-item:hover{background:#f7fbfd;}
+.ml-video-item h3{font-size:15px;font-weight:700;color:var(--cl-navy);line-height:1.45;}
+.ml-video-item p{font-size:13.2px;color:var(--cl-muted);margin-top:4px;line-height:1.65;}
+.ml-video-item .ml-tags{margin-top:7px;}
+.ml-video-item .ml-actions{margin-top:9px;}
+.ml-video-num{
+  font-size:13px;font-weight:800;color:#b6c9d7;letter-spacing:.04em;
+  align-self:flex-start;padding-top:2px;
+}
+
+/* 关键词解析 */
+.ml-insight{
+  background:#fff;border:1px solid var(--cl-line);border-radius:var(--radius-lg);
+  padding:34px 36px;box-shadow:var(--shadow-card);
+}
+.ml-insight h3{font-size:18.5px;color:var(--cl-navy);margin:26px 0 10px;font-weight:800;display:flex;gap:9px;align-items:baseline;}
+.ml-insight h3:first-child{margin-top:0;}
+.ml-insight h3 .ml-idx{
+  font-size:12px;font-weight:700;color:var(--cl-teal);letter-spacing:.1em;
+  background:var(--cl-teal-soft);border-radius:6px;padding:2px 8px;flex:0 0 auto;
+}
+.ml-insight p{font-size:14.6px;color:#3d5568;line-height:1.92;margin-bottom:12px;}
+.ml-insight p strong{color:var(--cl-blue);font-weight:700;}
+.ml-insight-quote{
+  margin:20px 0;padding:16px 20px;background:#f4f9fd;border-left:3px solid var(--cl-blue);
+  border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:14.4px;color:#33506a;
+}
+
+/* 专题 */
+.ml-topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;}
+.ml-topic{
+  background:#fff;border:1px solid var(--cl-line);border-radius:var(--radius-lg);
+  padding:22px 22px 18px;display:flex;flex-direction:column;gap:10px;
+  transition:transform .25s,box-shadow .25s,border-color .25s;
+}
+.ml-topic:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover);border-color:#bfd8e8;}
+.ml-topic-status{
+  display:inline-flex;align-items:center;gap:6px;font-size:11.8px;font-weight:700;
+  color:#0f8a6b;background:var(--cl-teal-soft);border-radius:999px;padding:3px 10px;width:fit-content;
+}
+.ml-topic-status::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--cl-teal);}
+.ml-topic h3{font-size:16.5px;font-weight:800;color:var(--cl-navy);line-height:1.45;}
+.ml-topic p{font-size:13.5px;color:var(--cl-muted);}
+.ml-topic-list{display:flex;flex-direction:column;gap:8px;margin-top:4px;border-top:1px dashed var(--cl-line);padding-top:12px;}
+.ml-topic-list li{font-size:13.2px;color:#40607a;display:flex;gap:8px;line-height:1.6;}
+.ml-topic-list li::before{content:"";flex:0 0 auto;width:5px;height:5px;border-radius:50%;background:#9fc2d8;margin-top:9px;}
+
+/* 作者区：双列简介 */
+.ml-author-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;}
+.ml-author{
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;
+  background:#fff;border:1px solid var(--cl-line);border-radius:var(--radius-lg);
+  padding:20px;transition:transform .22s,box-shadow .22s,border-color .22s;min-width:0;
+}
+.ml-author:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover);border-color:#bfd8e8;}
+.ml-avatar{
+  width:62px;height:62px;border-radius:50%;flex:0 0 auto;overflow:hidden;
+  box-shadow:0 4px 14px rgba(15,44,70,.14);
+}
+.ml-avatar svg{width:100%;height:100%;}
+.ml-author-main{min-width:0;display:flex;flex-direction:column;gap:5px;}
+.ml-author-main h3{font-size:16px;font-weight:800;color:var(--cl-navy);display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+.ml-author-role{font-size:11.6px;font-weight:600;color:#1c5b8c;background:#e6f0f8;border-radius:999px;padding:1px 9px;}
+.ml-author-main p{font-size:13.2px;color:var(--cl-muted);line-height:1.7;}
+.ml-author-nums{display:flex;gap:16px;font-size:12.4px;color:#6a8194;margin-top:2px;}
+.ml-author-nums b{color:var(--cl-navy);font-size:13.5px;}
+.ml-author-more{
+  font-size:12.5px;color:var(--cl-blue);font-weight:600;margin-top:4px;width:fit-content;
+  border-bottom:1px dashed #a9c9de;padding-bottom:1px;
+}
+
+/* 评论 */
+.ml-comment-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;}
+.ml-comment{
+  background:#fff;border:1px solid var(--cl-line);border-radius:var(--radius-md);
+  padding:18px 20px;display:flex;flex-direction:column;gap:9px;
+  box-shadow:0 4px 14px rgba(15,44,70,.04);transition:transform .2s,box-shadow .2s;
+}
+.ml-comment:hover{transform:translateY(-3px);box-shadow:var(--shadow-card);}
+.ml-comment-head{display:flex;align-items:center;gap:10px;}
+.ml-comment-head .ml-avatar{width:36px;height:36px;}
+.ml-comment-name{font-size:13.6px;font-weight:700;color:var(--cl-navy);}
+.ml-comment-role{font-size:11.6px;color:#8699a9;}
+.ml-stars{color:var(--cl-amber);font-size:12.5px;letter-spacing:1.5px;margin-left:auto;}
+.ml-comment p{font-size:13.6px;color:#456073;line-height:1.78;}
+.ml-comment time{font-size:11.8px;color:#9aabb9;}
+
+/* 图文索引 */
+.ml-index-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;}
+.ml-index-item{
+  display:grid;grid-template-columns:132px minmax(0,1fr);gap:16px;
+  background:#fff;border:1px solid var(--cl-line);border-radius:var(--radius-md);
+  overflow:hidden;transition:transform .22s,box-shadow .22s,border-color .22s;min-width:0;
+}
+.ml-index-item:hover{transform:translateY(-3px);box-shadow:var(--shadow-card);border-color:#bfd8e8;}
+.ml-index-thumb{background:#e9f1f6;}
+.ml-index-thumb svg{width:100%;height:100%;aspect-ratio:1/1.05;}
+.ml-index-body{padding:14px 16px 14px 0;display:flex;flex-direction:column;gap:6px;min-width:0;}
+.ml-index-body h3{font-size:14.6px;font-weight:700;color:var(--cl-navy);line-height:1.5;}
+.ml-index-body p{font-size:13px;color:var(--cl-muted);line-height:1.65;}
+
+/* 数据榜单 */
+.ml-rank-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;}
+.ml-rank{
+  background:#fff;border:1px solid var(--cl-line);border-radius:var(--radius-lg);
+  padding:22px;box-shadow:0 4px 18px rgba(15,44,70,.05);
+}
+.ml-rank h3{font-size:16.5px;font-weight:800;color:var(--cl-navy);margin-bottom:4px;}
+.ml-rank small{font-size:12.4px;color:#8297a8;display:block;margin-bottom:14px;}
+.ml-rank ol{display:flex;flex-direction:column;gap:11px;}
+.ml-rank li{display:grid;grid-template-columns:26px minmax(0,1fr) auto;gap:10px;align-items:center;font-size:13.4px;}
+.ml-rank-no{
+  width:23px;height:23px;border-radius:7px;background:#eef4f9;color:#5c7c94;
+  font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;
+}
+.ml-rank li:nth-child(1) .ml-rank-no{background:var(--cl-teal);color:#fff;}
+.ml-rank li:nth-child(2) .ml-rank-no{background:#4f9bc4;color:#fff;}
+.ml-rank li:nth-child(3) .ml-rank-no{background:#9dc3d9;color:#fff;}
+.ml-rank-name{color:#33506a;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.ml-rank-val{font-size:12.2px;color:var(--cl-teal);font-weight:700;}
+
+/* FAQ */
+.ml-faq-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;align-items:start;}
+.ml-faq{
+  background:#fff;border:1px solid var(--cl-line);border-radius:var(--radius-md);
+  padding:0 18px;transition:box-shadow .2s,border-color .2s;min-width:0;
+}
+.ml-faq:hover{border-color:#bfd8e8;box-shadow:0 6px 18px rgba(15,44,70,.06);}
+.ml-faq[open]{border-color:#a9d8c8;background:#fbfefd;}
+.ml-faq summary{
+  list-style:none;cursor:pointer;padding:15px 0;font-size:14.6px;font-weight:700;
+  color:var(--cl-navy);display:flex;align-items:center;gap:10px;line-height:1.5;
+}
+.ml-faq summary::-webkit-details-marker{display:none;}
+.ml-faq summary::after{
+  content:"+";margin-left:auto;font-size:18px;font-weight:400;color:var(--cl-teal);
+  transition:transform .22s;flex:0 0 auto;
+}
+.ml-faq[open] summary::after{transform:rotate(45deg);}
+.ml-faq p{font-size:13.6px;color:#456073;line-height:1.82;padding:0 0 16px;border-top:1px dashed #e3edf3;margin-top:-2px;padding-top:12px;}
+
+/* 企业动态 */
+.ml-news-list{display:flex;flex-direction:column;gap:0;background:#fff;border:1px solid var(--cl-line);border-radius:var(--radius-lg);overflow:hidden;}
+.ml-news-item{
+  display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:16px;align-items:baseline;
+  padding:17px 22px;border-bottom:1px solid #edf3f7;transition:background .18s;min-width:0;
+}
+.ml-news-item:last-child{border-bottom:none;}
+.ml-news-item:hover{background:#f7fbfd;}
+.ml-news-date{font-size:12.6px;color:#8fa4b4;font-variant-numeric:tabular-nums;flex:0 0 auto;}
+.ml-news-item h3{font-size:14.8px;font-weight:700;color:var(--cl-navy);line-height:1.55;}
+.ml-news-item h3 span{font-size:11.6px;font-weight:600;color:#0f8a6b;background:var(--cl-teal-soft);border-radius:999px;padding:1px 8px;margin-left:8px;white-space:nowrap;}
+.ml-news-item p{font-size:13px;color:var(--cl-muted);margin-top:3px;}
+.ml-news-more{font-size:12.4px;color:var(--cl-blue);flex:0 0 auto;font-weight:600;}
+
+/* 合作 */
+.ml-partner-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;}
+.ml-partner{
+  background:#fff;border:1px solid var(--cl-line);border-radius:var(--radius-md);
+  padding:18px 16px;display:flex;flex-direction:column;gap:6px;
+  transition:transform .2s,border-color .2s,box-shadow .2s;min-width:0;
+}
+.ml-partner:hover{transform:translateY(-3px);border-color:#bfd8e8;box-shadow:var(--shadow-card);}
+.ml-partner b{font-size:14.6px;color:var(--cl-navy);font-weight:800;}
+.ml-partner span{font-size:12.4px;color:var(--cl-muted);line-height:1.6;}
+
+/* CTA 投稿 */
+.ml-cta{
+  background:linear-gradient(120deg,#0f2c46 0%,#17466b 55%,#0f8a6b 130%);
+  border-radius:var(--radius-lg);padding:38px 40px;color:#eaf5fb;
+  display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center;
+  box-shadow:0 22px 48px rgba(15,44,70,.28);
+}
+.ml-cta h2{font-size:clamp(21px,2.4vw,28px);font-weight:800;color:#fff;line-height:1.35;margin-bottom:8px;}
+.ml-cta p{font-size:14.2px;color:#b6d3e4;max-width:44em;}
+.ml-cta-actions{display:flex;flex-wrap:wrap;gap:12px;}
+.ml-btn-light{
+  display:inline-flex;align-items:center;gap:7px;background:#fff;color:var(--cl-navy);
+  font-size:14px;font-weight:700;border-radius:999px;padding:10px 22px;
+  transition:transform .2s,box-shadow .2s;box-shadow:0 8px 20px rgba(0,0,0,.18);white-space:nowrap;
+}
+.ml-btn-light:hover{transform:translateY(-2px);box-shadow:0 14px 28px rgba(0,0,0,.24);}
+.ml-btn-line{
+  display:inline-flex;align-items:center;gap:7px;border:1.5px solid rgba(255,255,255,.5);
+  color:#fff;font-size:14px;font-weight:600;border-radius:999px;padding:9px 20px;
+  transition:background .2s,border-color .2s;white-space:nowrap;
+}
+.ml-btn-line:hover{background:rgba(255,255,255,.12);border-color:#fff;}
+
+/* 页脚 */
+.ml-footer{background:#0a1f33;color:#a9c1d3;padding:52px 0 0;font-size:13.6px;}
+.ml-footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:34px;padding-bottom:38px;}
+.ml-footer .ml-brand-name{color:#fff;}
+.ml-footer .ml-brand-name small{color:#7e9cb2;}
+.ml-footer-desc{margin-top:14px;font-size:13.2px;line-height:1.85;color:#8eaabf;max-width:26em;}
+.ml-footer h4{font-size:13.4px;color:#fff;font-weight:700;margin-bottom:14px;letter-spacing:.04em;}
+.ml-footer ul{display:flex;flex-direction:column;gap:9px;}
+.ml-footer ul a{font-size:13.2px;color:#96b1c6;transition:color .18s;}
+.ml-footer ul a:hover{color:var(--cl-teal);}
+.ml-footer-bottom{
+  border-top:1px solid #17334b;padding:18px 0 24px;
+  display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
+  font-size:12.4px;color:#6f8ca1;
+}
+.ml-footer-bottom .ml-foot-links{display:flex;flex-wrap:wrap;gap:16px;}
+
+/* 返回顶部 */
+.ml-top{
+  position:fixed;right:22px;bottom:26px;z-index:110;
+  width:46px;height:46px;border-radius:50%;background:var(--cl-navy);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-size:15px;
+  box-shadow:0 10px 24px rgba(15,44,70,.32);
+  opacity:0;visibility:hidden;transform:translateY(12px);
+  transition:opacity .25s,transform .25s,visibility .25s,background .2s;
+}
+.ml-top.ml-show{opacity:1;visibility:visible;transform:translateY(0);}
+.ml-top:hover{background:var(--cl-teal);}
+
+/* Toast / 弹窗 */
+.ml-toast{
+  position:fixed;left:50%;bottom:36px;transform:translate(-50%,20px);
+  background:rgba(15,44,70,.95);color:#fff;font-size:13.4px;
+  border-radius:999px;padding:10px 22px;z-index:300;
+  opacity:0;visibility:hidden;transition:opacity .25s,transform .25s,visibility .25s;
+  box-shadow:0 12px 30px rgba(0,0,0,.28);max-width:88vw;text-align:center;
+}
+.ml-toast.ml-show{opacity:1;visibility:visible;transform:translate(-50%,0);}
+.ml-modal-mask{
+  position:fixed;inset:0;background:rgba(10,31,51,.55);backdrop-filter:blur(3px);
+  z-index:250;display:flex;align-items:center;justify-content:center;padding:20px;
+  opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s;
+}
+.ml-modal-mask.ml-show{opacity:1;visibility:visible;}
+.ml-modal{
+  background:#fff;border-radius:var(--radius-lg);width:min(560px,100%);
+  max-height:86vh;overflow:auto;box-shadow:0 30px 70px rgba(0,0,0,.35);
+  transform:translateY(14px);transition:transform .25s;
+}
+.ml-modal-mask.ml-show .ml-modal{transform:translateY(0);}
+.ml-modal-head{
+  display:flex;align-items:flex-start;gap:12px;padding:22px 24px 0;
+}
+.ml-modal-head h3{font-size:18px;font-weight:800;color:var(--cl-navy);line-height:1.4;}
+.ml-modal-close{
+  margin-left:auto;width:32px;height:32px;border-radius:50%;background:#f1f6fa;
+  display:flex;align-items:center;justify-content:center;font-size:16px;color:#5b7085;
+  flex:0 0 auto;transition:background .18s,color .18s;
+}
+.ml-modal-close:hover{background:#e2ecf3;color:var(--cl-navy);}
+.ml-modal-body{padding:16px 24px 24px;font-size:14px;color:#3d5568;line-height:1.8;}
+.ml-modal-body .ml-field{margin-bottom:14px;}
+.ml-modal-body label{display:block;font-size:13px;font-weight:700;color:var(--cl-navy);margin-bottom:6px;}
+.ml-modal-body input,.ml-modal-body textarea,.ml-modal-body select{
+  width:100%;border:1px solid var(--cl-line);border-radius:var(--radius-sm);
+  padding:9px 12px;font-size:13.6px;color:var(--cl-ink);outline:none;background:#fbfdfe;
+  transition:border-color .2s,box-shadow .2s;
+}
+.ml-modal-body input:focus,.ml-modal-body textarea:focus,.ml-modal-body select:focus{
+  border-color:var(--cl-teal);box-shadow:0 0 0 3px rgba(24,181,138,.15);background:#fff;
+}
+.ml-modal-body textarea{resize:vertical;min-height:96px;}
+.ml-form-tip{font-size:12.4px;color:#8499a9;margin-top:4px;}
+
+/* 反馈 */
+@media(max-width:1080px){
+  .ml-hero-grid{grid-template-columns:1fr;gap:36px;}
+  .ml-hero-visual{max-width:620px;}
+  .ml-float-card{left:auto;right:12px;bottom:-16px;}
+  .ml-video-layout{grid-template-columns:1fr;}
+  .ml-topic-grid,.ml-rank-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .ml-partner-grid{grid-template-columns:repeat(3,minmax(0,1fr));}
+  .ml-footer-grid{grid-template-columns:1fr 1fr;gap:28px;}
+}
+@media(max-width:900px){
+  .ml-nav{
+    display:none;position:absolute;left:0;right:0;top:100%;
+    background:#fff;border-bottom:1px solid var(--cl-line);
+    flex-direction:column;align-items:stretch;gap:2px;padding:10px 4%;
+    box-shadow:0 16px 30px rgba(15,44,70,.12);flex-wrap:nowrap;
+  }
+  .ml-nav.ml-open{display:flex;}
+  .ml-nav a{padding:11px 12px;border-radius:10px;}
+  .ml-header .ml-wrap{position:relative;flex-wrap:wrap;padding-top:8px;padding-bottom:8px;gap:14px;min-height:0;}
+  .ml-burger{display:flex;margin-left:auto;order:3;}
+  .ml-header-tools{order:4;flex:1 1 100%;justify-content:space-between;}
+  .ml-search{width:100%;flex:1 1 auto;}
+  .ml-header-tools .ml-btn-primary{display:none;}
+  .ml-author-grid,.ml-comment-grid,.ml-faq-grid,.ml-index-grid{grid-template-columns:1fr;}
+  .ml-cta{grid-template-columns:1fr;padding:30px 26px;}
+  .ml-anchor{scroll-margin-top:132px;}
+}
+@media(max-width:640px){
+  .ml-section{padding:44px 0;}
+  .ml-hero{padding:38px 0 46px;}
+  .ml-topic-grid,.ml-rank-grid{grid-template-columns:1fr;}
+  .ml-partner-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .ml-insight{padding:24px 20px;}
+  .ml-hero-stats{grid-template-columns:1fr;max-width:none;}
+  .ml-hero-stats .ml-stat{display:flex;align-items:baseline;gap:10px;padding:11px 14px;}
+  .ml-hero-stats .ml-stat b{font-size:21px;}
+  .ml-hero-stats .ml-stat small{margin-top:0;}
+  .ml-index-item{grid-template-columns:104px minmax(0,1fr);}
+  .ml-footer-grid{grid-template-columns:1fr;}
+  .ml-news-item{grid-template-columns:auto minmax(0,1fr);row-gap:4px;}
+  .ml-news-more{display:none;}
+  .ml-float-card{position:static;margin-top:14px;max-width:none;}
+  .ml-video-item{padding:14px 16px;}
+  .ml-cta-actions .ml-btn-light,.ml-cta-actions .ml-btn-line{flex:1 1 auto;justify-content:center;}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- ===== 吸顶：公告 + 页头 ===== -->
+<div class="ml-sticky-zone">
+  <div class="ml-notice-bar" role="region" aria-label="平台最新公告">
+    <div class="ml-wrap">
+      <span class="ml-notice-tag">官方发布</span>
+      <span class="ml-notice-text">
+        <b>11月22日更新</b>：一物一码溯源系统 v4.2 上线，新增「多级包装关联」与「一码双查」功能；第 6 期溯源实战训练营开放报名，限量 120 席。
+      </span>
+      <a class="ml-notice-link" href="#ml-updates">查看全部动态</a>
+    </div>
+  </div>
+
+  <header class="ml-header" id="ml-top">
+    <div class="ml-wrap">
+      <a class="ml-brand" href="#ml-top" aria-label="码链溯源官方网站首页">
+        <svg class="ml-brand-mark" viewBox="0 0 64 64" role="img" aria-label="码链溯源品牌标识">
+          <rect width="64" height="64" rx="16" fill="#0f2c46"/>
+          <path d="M14 20h8v8h-8zm0 16h8v8h-8zm14-16h8v8h-8zm14 0h8v8h-8zm0 16h8v8h-8zm0 8h8v8h-8zm-14 0h8v8h-8z" fill="#18b58a"/>
+        </svg>
+        <span class="ml-brand-name">码链溯源<small>TRACE CODE</small></span>
+      </a>
+
+      <nav class="ml-nav" id="ml-nav" aria-label="主导航">
+        <a href="#ml-focus">焦点内容</a>
+        <a href="#ml-videos">溯源视频</a>
+        <a href="#ml-insight">关键词解析</a>
+        <a href="#ml-topics">专题企划</a>
+        <a href="#ml-authors">创作者</a>
+        <a href="#ml-rank">数据榜单</a>
+        <a href="#ml-faq">常见问题</a>
+      </nav>
+
+      <div class="ml-header-tools">
+        <div class="ml-search">
+          <input type="search" id="ml-search-input" placeholder="搜索溯源方案 / 短视频 / 创作者" aria-label="站内搜索">
+          <button type="button" id="ml-search-btn">搜索</button>
+          <div class="ml-search-feedback" id="ml-search-feedback" aria-live="polite"></div>
+        </div>
+        <a class="ml-btn-primary" href="#" data-ml-modal="submit">投稿 / 报名</a>
+        <button class="ml-burger" id="ml-burger" aria-label="展开导航菜单" aria-expanded="false" aria-controls="ml-nav"><span></span></button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<!-- ===== 首屏 ===== -->
+<section class="ml-hero ml-anchor" id="ml-hero" aria-labelledby="ml-hero-title">
+  <div class="ml-wrap ml-hero-grid">
+    <div>
+      <span class="ml-eyebrow">企业级 · 官方视频门户</span>
+      <h1 id="ml-hero-title">产品一物一码溯源系统<em>官方网站</em></h1>
+      <p class="ml-hero-lead">码链溯源是深耕产品全链路追溯领域的专业品牌，以「一物一码」为核心，为企业提供防伪、防窜、渠道管理与消费者互动的一体化解决方案，并以高清原创视频持续输出可落地的行业知识。</p>
+      <p class="ml-hero-intro">作为国内专注一物一码溯源系统的企业平台，我们把每一次扫码都视为品牌与用户之间真实而可验证的一次对话。从生产线赋码、仓储流转到终端开箱，我们帮助客户搭建值得信赖的内容生态与数据资产。</p>
+
+      <div class="ml-hero-stats">
+        <div class="ml-stat"><b>38<span>亿</span></b><small>累计赋码标识量</small></div>
+        <div class="ml-stat"><b>2600<span>+</span></b><small>服务企业客户</small></div>
+        <div class="ml-stat"><b>99.98<span>%</span></b><small>查询响应可用率</small></div>
+      </div>
+
+      <div class="ml-hero-actions">
+        <a class="ml-btn-primary" href="#ml-videos">观看溯源视频 →</a>
+        <a class="ml-btn-ghost" href="#ml-insight">了解系统能力</a>
+        <a class="ml-btn-ghost" href="#" data-ml-modal="submit">预约方案演示</a>
+      </div>
+    </div>
+
+    <div class="ml-hero-visual">
+      <figure>
+        <svg viewBox="0 0 640 520" role="img" aria-label="产品包装赋码与扫码溯源数据看板示意图">
+          <defs>
+            <linearGradient id="mlHeroBg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#0f2c46"/><stop offset="0.62" stop-color="#15486b"/><stop offset="1" stop-color="#0f8a6b"/>
+            </linearGradient>
+            <linearGradient id="mlHeroCard" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e6f2f8"/>
+            </linearGradient>
+          </defs>
+          <rect width="640" height="520" fill="url(#mlHeroBg)"/>
+          <g stroke="#7fd8bf" stroke-width="1" opacity="0.16">
+            <path d="M0 92h640M0 188h640M0 284h640M0 380h640"/>
+            <path d="M96 0v520M224 0v520M352 0v520M480 0v520"/>
+          </g>
+          <circle cx="540" cy="86" r="118" fill="#18b58a" opacity="0.18"/>
+          <circle cx="88" cy="452" r="96" fill="#4f9bc4" opacity="0.16"/>
+
+          <g transform="translate(58,78)">
+            <rect width="300" height="196" rx="16" fill="url(#mlHeroCard)" opacity="0.97"/>
+            <rect x="20" y="20" width="26" height="26" rx="6" fill="#0f2c46"/>
+            <rect x="54" y="26" width="90" height="7" rx="3.5" fill="#94b3c7"/>
+            <rect x="54" y="41" width="58" height="6" rx="3" fill="#c3d6e2"/>
+            <g fill="#0f2c46">
+              <rect x="20" y="66" width="8" height="8"/><rect x="34" y="66" width="8" height="8"/><rect x="62" y="66" width="8" height="8"/><rect x="76" y="66" width="8" height="8"/>
+              <rect x="20" y="82" width="8" height="8"/><rect x="48" y="82" width="8" height="8"/><rect x="76" y="82" width="8" height="8"/>
+              <rect x="34" y="98" width="8" height="8"/><rect x="62" y="98" width="8" height="8"/><rect x="90" y="98" width="8" height="8"/>
+              <rect x="20" y="114" width="8" height="8"/><rect x="48" y="114" width="8" height="8"/><rect x="90" y="114" width="8" height="8"/>
+              <rect x="34" y="130" width="8" height="8"/><rect x="62" y="130" width="8" height="8"/><rect x="76" y="130" width="8" height="8"/>
+            </g>
+            <rect x="150" y="66" width="130" height="110" rx="10" fill="#0f2c46" opacity="0.06"/>
+            <rect x="126" y="80" width="140" height="8" rx="4" fill="#0f8a6b" opacity="0.72"/>
+            <rect x="126" y="96" width="112" height="7" rx="3.5" fill="#8fb4c8"/>
+            <rect x="126" y="111" width="128" height="7" rx="3.5" fill="#8fb4c8"/>
+            <rect x="126" y="126" width="86" height="7" rx="3.5" fill="#8fb4c8"/>
+            <rect x="126" y="148" width="70" height="22" rx="11" fill="#18b58a"/>
+            <path d="M139 159l5 5 9-10" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="176" y="158" width="40" height="6" rx="3" fill="#ffffff" opacity="0.9"/>
+
+            <rect y="222" width="234" height="120" rx="14" fill="#0a1f33" opacity="0.72"/>
+            <path d="M18 312l40-38 34 22 42-52 36 30 44-42" stroke="#18b58a" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M18 312l40-16 34 8 42-26 36 14 44-22" stroke="#7fd8bf" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+            <circle cx="258" cy="270" r="4" fill="#18b58a"/>
+          </g>
+
+          <g transform="translate(392,206)">
+            <rect width="188" height="236" rx="18" fill="#ffffff" opacity="0.97"/>
+            <rect x="18" y="18" width="66" height="9" rx="4.5" fill="#0f2c46"/>
+            <rect x="18" y="38" width="152" height="1" fill="#dde9f1"/>
+            <g>
+              <circle cx="32" cy="66" r="9" fill="#18b58a" opacity="0.2"/>
+              <path d="M28 66l3 3 5-6" stroke="#0f8a6b" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <rect x="50" y="60" width="90" height="7" rx="3.5" fill="#9fbccd"/>
+              <rect x="50" y="72" width="58" height="6" rx="3" fill="#cfdfe9"/>
+            </g>
+            <g>
+              <circle cx="32" cy="104" r="9" fill="#4f9bc4" opacity="0.2"/>
+              <rect x="28" y="101" width="8" height="7" rx="1.5" fill="#1c5b8c"/>
+              <rect x="50" y="98" width="104" height="7" rx="3.5" fill="#9fbccd"/>
+              <rect x="50" y="110" width="72" height="6" rx="3" fill="#cfdfe9"/>
+            </g>
+            <g>
+              <circle cx="32" cy="142" r="9" fill="#f0a53c" opacity="0.22"/>
+              <path d="M28 142h8M32 138v8" stroke="#c9821f" stroke-width="2" stroke-linecap="round"/>
+              <rect x="50" y="136" width="82" height="7" rx="3.5" fill="#9fbccd"/>
+              <rect x="50" y="148" width="96" height="6" rx="3" fill="#cfdfe9"/>
+            </g>
+            <rect x="18" y="170" width="152" height="48" rx="10" fill="#f2f8fb"/>
+            <rect x="30" y="184" width="46" height="7" rx="3.5" fill="#18b58a"/>
+            <rect x="30" y="199" width="96" height="6" rx="3" fill="#b9cfdd"/>
+            <rect x="126" y="182" width="32" height="20" rx="10" fill="#0f2c46"/>
+            <rect x="134" y="190" width="16" height="4" rx="2" fill="#7fd8bf"/>
+          </g>
+
+          <g transform="translate(438,74)">
+            <rect width="146" height="84" rx="14" fill="#ffffff" opacity="0.94"/>
+            <rect x="16" y="18" width="42" height="7" rx="3.5" fill="#8fb4c8"/>
+            <rect x="16" y="34" width="78" height="12" rx="5" fill="#0f2c46"/>
+            <rect x="16" y="56" width="104" height="7" rx="3.5" fill="#c3d6e2"/>
+            <rect x="100" y="16" width="30" height="30" rx="8" fill="#18b58a" opacity="0.18"/>
+            <path d="M109 31h12M115 25v12" stroke="#0f8a6b" stroke-width="2.4" stroke-linecap="round"/>
+          </g>
+        </svg>
+      </figure>
+      <div class="ml-float-card">
+        <b><span class="ml-dot"></span>全链路可查</b>
+        从生产赋码到终端验真，每一次扫码都有迹可循。
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 焦点内容 ===== -->
+<section class="ml-section ml-anchor" id="ml-focus" aria-labelledby="ml-focus-title">
+  <div class="ml-wrap">
+    <div class="ml-head">
+      <div class="ml-kicker">Focus · 焦点内容</div>
+      <h2 id="ml-focus-title">产品一物一码溯源系统焦点内容精选</h2>
+      <p>由码链溯源官方编辑部与一线实施团队共同打磨，聚焦可复用的落地经验、原创高清实操演示与真实企业案例。</p>
+    </div>
+
+    <div class="ml-video-layout">
+      <article class="ml-card ml-feature-card">
+        <div class="ml-cover">
+          <svg viewBox="0 0 640 360" role="img" aria-label="生产线上喷码设备为瓶装产品赋码的工厂实景插画">
+            <defs>
+              <linearGradient id="mlFocusCover" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#123a58"/><stop offset="1" stop-color="#0f8a6b"/>
+              </linearGradient>
+            </defs>
+            <rect width="640" height="360" fill="url(#mlFocusCover)"/>
+            <circle cx="520" cy="70" r="130" fill="#7fd8bf" opacity="0.12"/>
+            <g opacity="0.2" stroke="#bfe9dc" stroke-width="1">
+              <path d="M0 300h640M0 240h640M0 180h640"/>
+            </g>
+            <rect x="0" y="286" width="640" height="74" fill="#0a1f33" opacity="0.5"/>
+            <g>
+              <rect x="64" y="120" width="176" height="166" rx="10" fill="#e9f4f8" opacity="0.95"/>
+              <rect x="80" y="136" width="144" height="64" rx="6" fill="#0f2c46"/>
+              <rect x="94" y="152" width="80" height="7" rx="3.5" fill="#7fd8bf"/>
+              <rect x="94" y="168" width="112" height="6" rx="3" fill="#8fb4c8"/>
+              <rect x="94" y="182" width="64" height="6" rx="3" fill="#8fb4c8"/>
+              <g fill="#0f2c46">
+                <rect x="82" y="216" width="7" height="7"/><rect x="96" y="216" width="7" height="7"/><rect x="118" y="216" width="7" height="7"/><rect x="132" y="216" width="7" height="7"/>
+                <rect x="82" y="232" width="7" height="7"/><rect x="110" y="232" width="7" height="7"/><rect x="132" y="232" width="7" height="7"/>
+                <rect x="96" y="248" width="7" height="7"/><rect x="110" y="248" width="7" height="7"/><rect x="132" y="248" width="7" height="7"/>
+              </g>
+              <rect x="176" y="212" width="48" height="52" rx="5" fill="#18b58a" opacity="0.85"/>
+              <path d="M192 238l7 7 13-15" stroke="#fff" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <g>
+              <rect x="286" y="96" width="66" height="190" rx="8" fill="#dceef4" opacity="0.92"/>
+              <rect x="292" y="150" width="54" height="42" rx="4" fill="#ffffff"/>
+              <g fill="#0f2c46" opacity="0.85">
+                <rect x="297" y="156" width="5" height="5"/><rect x="307" y="156" width="5" height="5"/><rect x="322" y="156" width="5" height="5"/>
+                <rect x="297" y="166" width="5" height="5"/><rect x="312" y="166" width="5" height="5"/><rect x="327" y="166" width="5" height="5"/>
+                <rect x="302" y="176" width="5" height="5"/><rect x="317" y="176" width="5" height="5"/><rect x="332" y="176" width="5" height="5"/>
+              </g>
+              <rect x="292" y="110" width="54" height="26" rx="4" fill="#0f8a6b" opacity="0.6"/>
+              <rect x="382" y="126" width="66" height="160" rx="8" fill="#dceef4" opacity="0.8"/>
+              <rect x="388" y="170" width="54" height="42" rx="4" fill="#ffffff"/>
+              <g fill="#0f2c46" opacity="0.6">
+                <rect x="393" y="176" width="5" height="5"/><rect x="408" y="176" width="5" height="5"/><rect x="423" y="176" width="5" height="5"/>
+                <rect x="398" y="186" width="5" height="5"/><rect x="413" y="186" width="5" height="5"/><rect x="428" y="186" width="5" height="5"/>
+              </g>
+            </g>
+            <g>
+              <rect x="486" y="150" width="118" height="140" rx="12" fill="#ffffff" opacity="0.94"/>
+              <rect x="500" y="166" width="56" height="8" rx="4" fill="#0f2c46"/>
+              <rect x="500" y="184" width="90" height="7" rx="3.5" fill="#b9cfdd"/>
+              <rect x="500" y="200" width="70" height="7" rx="3.5" fill="#b9cfdd"/>
+              <path d="M502 258l22-22 20 12 26-30 18 16" stroke="#18b58a" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="588" cy="234" r="5" fill="#0f8a6b"/>
+            </g>
+            <g transform="translate(104,58)">
+              <rect width="152" height="34" rx="17" fill="#ffffff" opacity="0.94"/>
+              <circle cx="21" cy="17" r="6" fill="#18b58a"/>
+              <rect x="36" y="13" width="96" height="8" rx="4" fill="#0f2c46" opacity="0.75"/>
+            </g>
+            <path d="M258 182h22M448 198h32" stroke="#7fd8bf" stroke-width="2.4" stroke-dasharray="6 6" stroke-linecap="round"/>
+          </svg>
+          <div class="ml-play"><span>▶</span></div>
+        </div>
+        <div class="ml-card-body">
+          <div class="ml-tags">
+            <span class="ml-tag">教程干货</span><span class="ml-tag ml-tag-blue">产线赋码</span>
+          </div>
+          <h3>从喷码到关联：一条产线跑通一物一码的 6 个关键节点</h3>
+          <p>完整还原从包材准备、赋码选型、采集关联到装箱入库的实施路径，含设备参数与常见踩坑清单，适合首次上线溯源系统的制造企业对照落地。</p>
+          <div class="ml-meta">
+            <span class="ml-author">作者：周砚舟</span><span>播放 128.6万</span><span>点赞 4.2万</span><span>收藏 1.8万</span>
+          </div>
+          <div class="ml-actions">
+            <button class="ml-act" data-ml-like type="button">👍 点赞 <span data-ml-like-num>42130</span></button>
+            <button class="ml-act ml-fav" data-ml-fav type="button">♡ 收藏</button>
+            <button class="ml-act" data-ml-copy type="button">复制链接</button>
+            <button class="ml-act" data-ml-modal="comment" type="button">评论</button>
+          </div>
+        </div>
+      </article>
+
+      <div class="ml-video-list">
+        <article class="ml-video-item">
+          <div>
+            <h3>一码双查实测：消费者验真与渠道稽查如何共用一套码</h3>
+            <p>用同一枚二维码承载消费者防伪查询与渠道流向采集，演示权限分级与查询日志留存方式。</p>
+            <div class="ml-tags"><span class="ml-tag">深度测评</span><span class="ml-tag ml-tag-blue">防窜管理</span></div>
+            <div class="ml-actions">
+              <button class="ml-act" data-ml-like type="button">👍 点赞 <span data-ml-like-num>19840</span></button>
+              <button class="ml-act ml-fav" data-ml-fav type="button">♡ 收藏</button>
+              <button class="ml-act" data-ml-copy type="button">复制链接</button>
+            </div>
+          </div>
+          <span class="ml-video-num">01</span>
+        </article>
+        <article class="ml-video-item">
+          <div>
+            <h3>农产品溯源：从地头批次到商超货架的数字化记录</h3>
+            <p>以果蔬合作社为例，讲解地块档案、采收批次、冷链温控数据如何与商品码自动关联。</p>
+            <div class="ml-tags"><span class="ml-tag">城市探索</span><span class="ml-tag ml-tag-blue">农业溯源</span></div>
+            <div class="ml-actions">
+              <button class="ml-act" data-ml-like type="button">👍 点赞 <span data-ml-like-num>16220</span></button>
+              <button class="ml-act ml-fav" data-ml-fav type="button">♡ 收藏</button>
+              <button class="ml-act" data-ml-copy type="button">复制链接</button>
+            </div>
+          </div>
+          <span class="ml-video-num">02</span>
+        </article>
+        <article class="ml-video-item">
+          <div>
+            <h3>溯源不等于防伪：企业最容易混淆的三组概念拆解</h3>
+            <p>用具体业务场景区分追溯、防伪与营销码的边界，帮助品牌方在立项前明确需求优先级。</p>
+            <div class="ml-tags"><span class="ml-tag">行业观察</span><span class="ml-tag ml-tag-blue">方案选型</span></div>
+            <div class="ml-actions">
+              <button class="ml-act" data-ml-like type="button">👍 点赞 <span data-ml-like-num>23760</span></button>
+              <button class="ml-act ml-fav" data-ml-fav type="button">♡ 收藏</button>
+              <button class="ml-act" data-ml-copy type="button">复制链接</button>
+            </div>
+          </div>
+          <span class="ml-video-num">03</span>
+        </article>
+        <article class="ml-video-item">
+          <div>
+            <h3>扫码数据看板怎么读：五个指标判断渠道健康度</h3>
+            <p>首扫率、异地扫码率、重复扫码间隔等指标的实际含义与预警阈值，附现场读图演示。</p>
+            <div class="ml-tags"><span class="ml-tag">实用技巧</span><span class="ml-tag ml-tag-blue">数据分析</span></div>
+            <div class="ml-actions">
+              <button class="ml-act" data-ml-like type="button">👍 点赞 <span data-ml-like-num>11590</span></button>
+              <button class="ml-act ml-fav" data-ml-fav type="button">♡ 收藏</button>
+              <button class="ml-act" data-ml-copy type="button">复制链接</button>
+            </div>
+          </div>
+          <span class="ml-video-num">04</span>
+        </article>
+        <article class="ml-video-item">
+          <div>
+            <h3>中小品牌也能做溯源：轻量化部署的三个务实建议</h3>
+            <p>预算有限时如何分阶段投入，从单一品类试点开始，避免一次性重投入带来的实施风险。</p>
+            <div class="ml-tags"><span class="ml-tag">经验分享</span><span class="ml-tag ml-tag-blue">轻量部署</span></div>
+            <div class="ml-actions">
+              <button class="ml-act" data-ml-like type="button">👍 点赞 <span data-ml-like-num>9840</span></button>
+              <button class="ml-act ml-fav" data-ml-fav type="button">♡ 收藏</button>
+              <button class="ml-act" data-ml-copy type="button">复制链接</button>
+            </div>
+          </div>
+          <span class="ml-video-num">05</span>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 关键词解析 ===== -->
+<section class="ml-section ml-section-alt ml-anchor" id="ml-insight" aria-labelledby="ml-insight-title">
+  <div class="ml-wrap">
+    <div class="ml-head">
+      <div class="ml-kicker">Insight · 关键词解析</div>
+      <h2 id="ml-insight-title">拆解产品一物一码溯源系统的真实能力边界</h2>
+      <p>我们把客户最常问的问题写成可读的长文，帮助你判断一套溯源系统能否真正落到产线与门店。</p>
+    </div>
+
+    <div class="ml-insight">
+      <h3><span class="ml-idx">01</span>一物一码到底「码」的是什么</h3>
+      <p>很多企业在立项时把一物一码理解为「贴个二维码」，但真正决定系统价值的，是这枚码背后被赋予了哪些数据关系。产品一物一码溯源系统的核心，是让最小销售单元拥有唯一身份标识，并把生产批次、生产时间、产线工位、质检结论、仓储仓位、经销商流向、终端门店乃至消费者首次查询时间全部挂载在这枚唯一标识上。码本身只是入口，数据链条才是资产。</p>
+      <p>在实际项目中，我们通常把码分为三层：<strong>单品码</strong>用于消费者验真与售后凭证，<strong>箱码</strong>用于仓储与物流周转，<strong>垛码</strong>用于整车发运与经销交接。三层之间通过关联关系串联，一旦发生质量问题，可以沿着任意一层向上向下快速圈定范围。这也是产品一物一码溯源系统相比传统批次追溯更具操作性的地方——批次只能圈到「一批」，而单品码可以精确到「一瓶」「一盒」。</p>
+      <p>需要说明的是，赋码方式会直接影响后续体验。激光雕刻适合金属与硬质包装，喷墨喷码适合纸盒与瓶盖，标签贴附适合生鲜与异形包装，而软件层面的码规则设计则决定了未来能否平滑扩容。我们建议企业在选型阶段就把「未来三年是否增加 SKU」「是否跨工厂生产」「是否要做消费者运营」这三个问题想清楚，再决定码制与关联层级。</p>
+
+      <h3><span class="ml-idx">02</span>溯源系统如何与企业现有系统协同</h3>
+      <p>没有任何一套溯源系统可以脱离企业既有信息化基础独立运转。现实中，产品一物一码溯源系统往往需要与 ERP 的工单、MES 的产线采集、WMS 的出入库、CRM 的会员体系以及经销商的订货平台打通。我们在实施中通常采用「事件驱动 + 标准接口」的方式：产线赋码成功产生一个赋码事件，装箱关联产生一个包装事件，出库产生一个流向事件，消费者扫码产生一个查询事件，所有事件写入统一的时间轴，再按权限向不同系统分发。</p>
+      <p>这种设计的直接好处是解耦。企业不必为了上溯源系统而重构原有系统，只需在关键节点增加事件上报。举例来说，某乳制品客户在不停产的情况下，仅用三周完成两条灌装线的赋码改造，MES 侧只增加了两个接口调用，其余逻辑全部由溯源平台承接。上线后，问题批次的定位时间从原来的平均 6 小时缩短到 20 分钟以内。</p>
+      <p>另一个容易被忽略的协同点是权限。生产部门关心良品率与赋码成功率，质量部门关心抽检与召回，市场部门关心扫码率与复购，经销商关心自己的区域是否被窜货。产品一物一码溯源系统的后台必须支持按角色、按区域、按品类进行数据隔离，否则系统上线后会陷入「谁都能看、谁都不信」的尴尬局面。我们在方案中默认提供四级权限模型，并允许企业按组织架构自定义。</p>
+
+      <h3><span class="ml-idx">03</span>企业落地时最常见的四个误区</h3>
+      <p>第一个误区是把溯源当成一次性项目。码发出去只是开始，后续的码库管理、失效码处理、包装改版适配、经销商培训都需要持续运营。我们见过不少企业上线半年后，因为更换包装供应商导致码段错位，最终不得不重新赋码，损失远高于系统本身投入。第二个误区是过度设计。有些企业一开始就要求支持十几种营销玩法，结果产线端复杂度飙升，赋码节拍跟不上，反而拖慢交付。</p>
+      <p>第三个误区是忽视消费者侧的表达。消费者扫码后看到的页面如果只是冷冰冰的一串字段，很难建立信任感。真正有效的做法是把溯源信息翻译成用户能读懂的语言：这瓶产品在哪条产线灌装、原料来自哪个产区、质检报告何时出具，再配合品牌故事与图文内容，让查询行为变成一次品牌沟通。这也是为什么我们坚持在官方网站持续发布原创视频，把「怎么讲清楚溯源」当成一门内容功课。</p>
+      <p>第四个误区是只看技术不看流程。同一套产品一物一码溯源系统，在不同的仓库作业习惯下效果可能相差数倍。我们建议企业在试点阶段就同步梳理收货扫码、拆箱扫码、退货核验等标准动作，并把操作培训纳入验收条件。系统是骨架，流程才是肌肉，两者缺一不可。</p>
+
+      <div class="ml-insight-quote">「一物一码的价值不在于码有多复杂，而在于企业是否愿意把真实的业务过程记录下来，并让每一个环节都能被验证。」——码链溯源产品团队内部培训摘录</div>
+
+      <h3><span class="ml-idx">04</span>如何评估一套溯源系统是否值得长期投入</h3>
+      <p>我们建议从四个维度做评估。其一是稳定性，重点看赋码环节的失败重试机制与离线缓存能力，产线一旦断网，系统能否继续赋码并在恢复后补传，这是硬指标。其二是可扩展性，码规则是否支持分段自定义，能否在不换系统的情况下增加新的业务属性。其三是数据资产归属，码库、扫码数据、消费者画像应当归企业所有，并支持标准格式导出。其四是服务响应，溯源问题往往发生在生产高峰，能否提供快速响应与远程协助，比功能清单上的条目数量更重要。</p>
+      <p>从行业趋势看，产品一物一码溯源系统正在从「合规工具」走向「经营工具」。过去企业上系统多是为了满足监管要求或客户审核，现在越来越多的品牌把它当作连接渠道与消费者的数字入口。扫码页可以承载产品说明、使用教程、售后登记、会员权益，甚至新品试用申请。当扫码率稳定在两位数以上时，这枚码就变成了一块自有流量位。</p>
+      <p>对准备启动的企业，我们的建议是：先选一个销量稳定、包装标准化程度高的单品做试点，跑通赋码、关联、出库、扫码查询的完整闭环，再复制到其他产线。官方团队会为试点客户提供标准实施手册、视频教程与一对一远程支持，帮助你在 8 到 12 周内看到第一份可用的数据报表。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 专题企划 ===== -->
+<section class="ml-section ml-anchor" id="ml-topics" aria-labelledby="ml-topics-title">
+  <div class="ml-wrap">
+    <div class="ml-head">
+      <div class="ml-kicker">Series · 专题企划</div>
+      <h2 id="ml-topics-title">围绕一物一码溯源系统的三组深度专题</h2>
+      <p>每个专题由官方编辑部策划，联合行业客户与一线实施顾问共同更新，持续为品牌提供可执行的参考。</p>
+    </div>
+
+    <div class="ml-topic-grid">
+      <article class="ml-topic">
+        <span class="ml-topic-status">持续更新中 · 已更新 12 期</span>
+        <h3>溯源从零到一：制造企业上线实务手册</h3>
+        <p>面向首次接触一物一码的制造企业，从需求梳理到产线验收，逐期拆解完整实施流程与验收标准。</p>
+        <ul class="ml-topic-list">
+          <li>第 12 期：赋码设备选型的成本对照表</li>
+          <li>第 11 期：包装改版时如何避免码段错位</li>
+          <li>第 10 期：产线抽检与赋码良率的协同管理</li>
+        </ul>
+      </article>
+
+      <article class="ml-topic">
+        <span class="ml-topic-status">连载中 · 已更新 8 期</span>
+        <h3>渠道防窜实战：让流向数据说话</h3>
+        <p>聚焦快消与美妆行业的渠道管理难题，用真实流向数据与稽查流程，还原防窜治理的可操作方法。</p>
+        <ul class="ml-topic-list">
+          <li>第 8 期：异地扫码预警的阈值怎么设</li>
+          <li>第 7 期：经销商开箱扫码的动力设计</li>
+          <li>第 6 期：窜货取证材料的规范留存</li>
+        </ul>
+      </article>
+
+      <article class="ml-topic">
+        <span class="ml-topic-status">完结专题 · 共 9 期</span>
+        <h3>扫码页即品牌页：消费者沟通设计</h3>
+        <p>从消费者扫码的那 8 秒出发，讨论溯源信息的可视化表达、品牌故事的嵌入方式与转化路径设计。</p>
+        <ul class="ml-topic-list">
+          <li>第 9 期：把质检报告翻译成人话</li>
+          <li>第 8 期：扫码后的会员入口设计</li>
+          <li>第 7 期：产地影像在溯源页中的用法</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 创作者 ===== -->
+<section class="ml-section ml-section-alt ml-anchor" id="ml-authors" aria-labelledby="ml-authors-title">
+  <div class="ml-wrap">
+    <div class="ml-head">
+      <div class="ml-kicker">Creators · 创作者矩阵</div>
+      <h2 id="ml-authors-title">深耕一物一码溯源系统的内容创作者</h2>
+      <p>他们来自产线、质量、渠道与内容一线，用持续更新的原创视频把复杂的溯源知识讲得清楚可用。</p>
+    </div>
+
+    <div class="ml-author-grid">
+      <article class="ml-author">
+        <div class="ml-avatar">
+          <svg viewBox="0 0 64 64" role="img" aria-label="创作者周砚舟的头像插画">
+            <rect width="64" height="64" fill="#1c5b8c"/>
+            <circle cx="32" cy="26" r="11" fill="#e8f3fa"/>
+            <path d="M12 60c2-12 10-18 20-18s18 6 20 18z" fill="#e8f3fa"/>
+            <rect x="18" y="40" width="28" height="4" rx="2" fill="#18b58a"/>
+          </svg>
+        </div>
+        <div class="ml-author-main">
+          <h3>周砚舟 <span class="ml-author-role">产线赋码</span></h3>
+          <p>十五年包装自动化经验，主导过乳品、调味品与日化行业的多条赋码产线改造。擅长把设备参数翻译成管理者能看懂的语言，视频中经常出现真实产线画面。</p>
+          <div class="ml-author-nums"><span>作品 <b>86</b></span><span>粉丝 <b>12.4万</b></span></div>
+          <button class="ml-author-more" type="button" data-ml-author="周砚舟">查看创作者档案 →</button>
+        </div>
+      </article>
+
+      <article class="ml-author">
+        <div class="ml-avatar">
+          <svg viewBox="0 0 64 64" role="img" aria-label="创作者林知夏的头像插画">
+            <rect width="64" height="64" fill="#0f8a6b"/>
+            <circle cx="32" cy="25" r="10.5" fill="#f2fbf7"/>
+            <path d="M13 60c2-11 9-17 19-17s17 6 19 17z" fill="#f2fbf7"/>
+            <circle cx="46" cy="20" r="5" fill="#f0a53c"/>
+          </svg>
+        </div>
+        <div class="ml-author-main">
+          <h3>林知夏 <span class="ml-author-role">消费者沟通</span></h3>
+          <p>内容设计出身，长期研究扫码页面的信息表达与品牌叙事。她主张溯源页不应只是数据罗列，而应成为一次有温度的品牌对话，作品多次被行业媒体引用。</p>
+          <div class="ml-author-nums"><span>作品 <b>64</b></span><span>粉丝 <b>9.7万</b></span></div>
+          <button class="ml-author-more" type="button" data-ml-author="林知夏">查看创作者档案 →</button>
+        </div>
+      </article>
+
+      <article class="ml-author">
+        <div class="ml-avatar">
+          <svg viewBox="0 0 64 64" role="img" aria-label="创作者陈望舒的头像插画">
+            <rect width="64" height="64" fill="#0f2c46"/>
+            <circle cx="32" cy="26" r="10.5" fill="#d9ecf5"/>
+            <path d="M13 60c2-11 9-17 19-17s17 6 19 17z" fill="#d9ecf5"/>
+            <path d="M20 18h24" stroke="#18b58a" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="ml-author-main">
+          <h3>陈望舒 <span class="ml-author-role">渠道防窜</span></h3>
+          <p>曾负责全国经销网络管理，熟悉快消行业的流向规则与稽查流程。他的视频以案例复盘为主，善于从一条异常扫码记录还原完整的渠道问题链路。</p>
+          <div class="ml-author-nums"><span>作品 <b>52</b></span><span>粉丝 <b>7.3万</b></span></div>
+          <button class="ml-author-more" type="button" data-ml-author="陈望舒">查看创作者档案 →</button>
+        </div>
+      </article>
+
+      <article class="ml-author">
+        <div class="ml-avatar">
+          <svg viewBox="0 0 64 64" role="img" aria-label="创作者苏从简的头像插画">
+            <rect width="64" height="64" fill="#4f9bc4"/>
+            <circle cx="32" cy="25" r="10" fill="#f4fbff"/>
+            <path d="M13 60c2-11 9-17 19-17s17 6 19 17z" fill="#f4fbff"/>
+            <rect x="24" y="14" width="16" height="4" rx="2" fill="#0f2c46"/>
+          </svg>
+        </div>
+        <div class="ml-author-main">
+          <h3>苏从简 <span class="ml-author-role">数据与合规</span></h3>
+          <p>关注溯源数据的合规边界与分析方法，擅长用图表讲解指标含义。她坚持每期视频附上可下载的数据模板，帮助中小企业建立自己的监测习惯。</p>
+          <div class="ml-author-nums"><span>作品 <b>47</b></span><span>粉丝 <b>6.1万</b></span></div>
+          <button class="ml-author-more" type="button" data-ml-author="苏从简">查看创作者档案 →</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 数据榜单 ===== -->
+<section class="ml-section ml-anchor" id="ml-rank" aria-labelledby="ml-rank-title">
+  <div class="ml-wrap">
+    <div class="ml-head">
+      <div class="ml-kicker">Ranking · 数据榜单</div>
+      <h2 id="ml-rank-title">一物一码溯源系统内容热度榜</h2>
+      <p>榜单每周一更新，综合播放完成率、收藏量与评论质量计算，反映社区对溯源内容的真实关注方向。</p>
+    </div>
+
+    <div class="ml-rank-grid">
+      <div class="ml-rank">
+        <h3>热度榜</h3>
+        <small>统计周期：11月11日 — 11月17日</small>
+        <ol>
+          <li><span class="ml-rank-no">1</span><span class="ml-rank-name">产线赋码的 6 个关键节点</span><span class="ml-rank-val">9.8 万</span></li>
+          <li><span class="ml-rank-no">2</span><span class="ml-rank-name">一码双查实测与权限分级</span><span class="ml-rank-val">8.6 万</span></li>
+          <li><span class="ml-rank-no">3</span><span class="ml-rank-name">溯源码背后的数据资产归属</span><span class="ml-rank-val">7.9 万</span></li>
+          <li><span class="ml-rank-no">4</span><span class="ml-rank-name">农产品批次记录的数字化</span><span class="ml-rank-val">6.4 万</span></li>
+          <li><span class="ml-rank-no">5</span><span class="ml-rank-name">扫码页面的八秒表达设计</span><span class="ml-rank-val">5.7 万</span></li>
+        </ol>
+      </div>
+
+      <div class="ml-rank">
+        <h3>新人榜</h3>
+        <small>首次发布至今不超过 90 天</small>
+        <ol>
+          <li><span class="ml-rank-no">1</span><span class="ml-rank-name">仓库收货扫码的三个标准动作</span><span class="ml-rank-val">4.9 万</span></li>
+          <li><span class="ml-rank-no">2</span><span class="ml-rank-name">小批量试点怎么选品</span><span class="ml-rank-val">4.3 万</span></li>
+          <li><span class="ml-rank-no">3</span><span class="ml-rank-name">包装改版时的码段迁移</span><span class="ml-rank-val">3.8 万</span></li>
+          <li><span class="ml-rank-no">4</span><span class="ml-rank-name">经销商培训的十分钟课件</span><span class="ml-rank-val">3.1 万</span></li>
+          <li><span class="ml-rank-no">5</span><span class="ml-rank-name">质检报告的扫码展示方式</span><span class="ml-rank-val">2.7 万</span></li>
+        </ol>
+      </div>
+
+      <div class="ml-rank">
+        <h3>口碑榜</h3>
+        <small>按收藏率与评论满意度综合排序</small>
+        <ol>
+          <li><span class="ml-rank-no">1</span><span class="ml-rank-name">溯源不等于防伪概念拆解</span><span class="ml-rank-val">98.6</span></li>
+          <li><span class="ml-rank-no">2</span><span class="ml-rank-name">异构系统协同的事件驱动法</span><span class="ml-rank-val">97.9</span></li>
+          <li><span class="ml-rank-no">3</span><span class="ml-rank-name">异地扫码预警阈值设定</span><span class="ml-rank-val">96.4</span></li>
+          <li><span class="ml-rank-no">4</span><span class="ml-rank-name">轻量化部署的三个建议</span><span class="ml-rank-val">95.8</span></li>
+          <li><span class="ml-rank-no">5</span><span class="ml-rank-name">召回演练的完整脚本</span><span class="ml-rank-val">94.2</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 图文索引 + 评价 ===== -->
+<section class="ml-section ml-section-alt ml-anchor" id="ml-concept" aria-labelledby="ml-concept-title">
+  <div class="ml-wrap">
+    <div class="ml-head">
+      <div class="ml-kicker">Archive · 图文索引</div>
+      <h2 id="ml-concept-title">一物一码溯源系统知识索引与用户评价</h2>
+      <p>轻量图文索引便于快速检索，真实用户评价来自已上线客户与社区创作者，覆盖多行业场景。</p>
+    </div>
+
+    <div class="ml-index-grid" style="margin-bottom:38px;">
+      <article class="ml-index-item">
+        <div class="ml-index-thumb">
+          <svg viewBox="0 0 132 138" role="img" aria-label="瓶装产品扫码验真的操作演示缩略图">
+            <rect width="132" height="138" fill="#123a58"/>
+            <rect x="34" y="26" width="40" height="88" rx="6" fill="#e9f4f8"/>
+            <rect x="42" y="58" width="24" height="22" rx="3" fill="#fff"/>
+            <g fill="#0f2c46">
+              <rect x="46" y="62" width="4" height="4"/><rect x="54" y="62" width="4" height="4"/><rect x="58" y="70" width="4" height="4"/><rect x="50" y="70" width="4" height="4"/>
+            </g>
+            <rect x="84" y="44" width="28" height="52" rx="5" fill="#18b58a" opacity="0.85"/>
+            <path d="M92 70l6 6 11-13" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="30" y="118" width="72" height="6" rx="3" fill="#7fd8bf" opacity="0.55"/>
+          </svg>
+        </div>
+        <div class="ml-index-body">
+          <h3>消费者扫码验真页面的信息分层</h3>
+          <p>从真伪结论、产品档案到售后入口，讲解三段式信息布局的取舍。</p>
+        </div>
+      </article>
+
+      <article class="ml-index-item">
+        <div class="ml-index-thumb">
+          <svg viewBox="0 0 132 138" role="img" aria-label="仓储货架与扫码枪的流转示意缩略图">
+            <rect width="132" height="138" fill="#0f8a6b"/>
+            <rect x="22" y="40" width="88" height="60" rx="5" fill="#f2fbf7" opacity="0.94"/>
+            <g fill="#0f2c46" opacity="0.8">
+              <rect x="32" y="52" width="18" height="14" rx="2"/><rect x="56" y="52" width="18" height="14" rx="2"/><rect x="80" y="52" width="18" height="14" rx="2"/>
+              <rect x="32" y="74" width="18" height="14" rx="2"/><rect x="56" y="74" width="18" height="14" rx="2"/>
+            </g>
+            <rect x="34" y="106" width="64" height="7" rx="3.5" fill="#d8f2e8"/>
+            <path d="M96 30l14 14M104 26l10 10" stroke="#f0a53c" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="ml-index-body">
+          <h3>仓储出入库的扫码节点设计</h3>
+          <p>哪些环节必须扫码、哪些可以合并，附常见作业误区对照。</p>
+        </div>
+      </article>
+
+      <article class="ml-index-item">
+        <div class="ml-index-thumb">
+          <svg viewBox="0 0 132 138" role="img" aria-label="渠道流向地图与预警标记缩略图">
+            <rect width="132" height="138" fill="#1c5b8c"/>
+            <path d="M24 44l26 -12 24 10 30 -8" stroke="#dbeaf4" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+            <circle cx="24" cy="44" r="5" fill="#7fd8bf"/><circle cx="50" cy="32" r="5" fill="#7fd8bf"/>
+            <circle cx="74" cy="42" r="5" fill="#f0a53c"/><circle cx="104" cy="34" r="5" fill="#7fd8bf"/>
+            <rect x="24" y="64" width="82" height="9" rx="4.5" fill="#e9f4f8" opacity="0.8"/>
+            <rect x="24" y="82" width="60" height="9" rx="4.5" fill="#e9f4f8" opacity="0.55"/>
+            <rect x="24" y="100" width="72" height="9" rx="4.5" fill="#e9f4f8" opacity="0.35"/>
+            <rect x="96" y="86" width="18" height="18" rx="4" fill="#f0a53c"/>
+            <path d="M105 90v6m0 4v1" stroke="#0f2c46" stroke-width="2.6" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="ml-index-body">
+          <h3>窜货预警看板的字段清单</h3>
+          <p>区域、批次、时间窗与异常等级四类字段的实际配置建议。</p>
+        </div>
+      </article>
+
+      <article class="ml-index-item">
+        <div class="ml-index-thumb">
+          <svg viewBox="0 0 132 138" role="img" aria-label="质检报告与数据图表缩略图">
+            <rect width="132" height="138" fill="#0f2c46"/>
+            <rect x="26" y="28" width="72" height="80" rx="5" fill="#eef6fa"/>
+            <rect x="36" y="40" width="38" height="6" rx="3" fill="#1c5b8c"/>
+            <rect x="36" y="54" width="50" height="5" rx="2.5" fill="#b9cfdd"/>
+            <rect x="36" y="66" width="42" height="5" rx="2.5" fill="#b9cfdd"/>
+            <path d="M36 94l14-12 12 8 16-16" stroke="#18b58a" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="104" cy="96" r="14" fill="#18b58a" opacity="0.85"/>
+            <path d="M98 96l4 4 8-9" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="ml-index-body">
+          <h3>抽检记录如何转成可读报表</h3>
+          <p>把质检数据组织成管理层愿意阅读的图表与结论摘要。</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="ml-head" style="margin-bottom:24px;">
+      <div class="ml-kicker">Voices · 用户评价</div>
+      <h2 style="font-size:clamp(21px,2.2vw,26px);margin-bottom:6px;">来自客户与社区的真实反馈</h2>
+    </div>
+
+    <div class="ml-comment-grid">
+      <article class="ml-comment">
+        <div class="ml-comment-head">
+          <div class="ml-avatar">
+            <svg viewBox="0 0 40 40" role="img" aria-label="用户评价者李经理的头像插画"><rect width="40" height="40" fill="#1c5b8c"/><circle cx="20" cy="16" r="7" fill="#e8f3fa"/><path d="M7 40c1.5-8 6.5-12 13-12s11.5 4 13 12z" fill="#e8f3fa"/></svg>
+          </div>
+          <div>
+            <div class="ml-comment-name">李承泽</div>
+            <div class="ml-comment-role">华东乳品企业 · 质量负责人</div>
+          </div>
+          <span class="ml-stars">★★★★★</span>
+        </div>
+        <p>我们两条灌装线改造前最担心停产，结果按视频里的分阶段方案执行，只用周末窗口完成切换。现在问题批次定位从半天缩短到二十分钟，质检部门压力小了很多。</p>
+        <time>2026-11-16</time>
+      </article>
+
+      <article class="ml-comment">
+        <div class="ml-comment-head">
+          <div class="ml-avatar">
+            <svg viewBox="0 0 40 40" role="img" aria-label="用户评价者王女士的头像插画"><rect width="40" height="40" fill="#0f8a6b"/><circle cx="20" cy="16" r="7" fill="#f2fbf7"/><path d="M7 40c1.5-8 6.5-12 13-12s11.5 4 13 12z" fill="#f2fbf7"/></svg>
+          </div>
+          <div>
+            <div class="ml-comment-name">王倩</div>
+            <div class="ml-comment-role">美妆品牌 · 渠道运营</div>
+          </div>
+          <span class="ml-stars">★★★★☆</span>
+        </div>
+        <p>防窜这块讲得比很多付费课程实在，尤其是预警阈值那期，我们照着调整了规则，误报减少了一半。唯一希望多讲讲跨境渠道的流向规则。</p>
+        <time>2026-11-14</time>
+      </article>
+
+      <article class="ml-comment">
+        <div class="ml-comment-head">
+          <div class="ml-avatar">
+            <svg viewBox="0 0 40 40" role="img" aria-label="用户评价者赵工的头像插画"><rect width="40" height="40" fill="#f0a53c"/><circle cx="20" cy="16" r="7" fill="#fff8ec"/><path d="M7 40c1.5-8 6.5-12 13-12s11.5 4 13 12z" fill="#fff8ec"/></svg>
+          </div>
+          <div>
+            <div class="ml-comment-name">赵启明</div>
+            <div class="ml-comment-role">包装设备集成商 · 技术总监</div>
+          </div>
+          <span class="ml-stars">★★★★★</span>
+        </div>
+        <p>做为集成方，我最看重接口文档的清晰度。这个平台的官方视频把事件模型讲得很透，我们给客户做方案时直接拿来当培训材料，节省了大量沟通成本。</p>
+        <time>2026-11-11</time>
+      </article>
+
+      <article class="ml-comment">
+        <div class="ml-comment-head">
+          <div class="ml-avatar">
+            <svg viewBox="0 0 40 40" role="img" aria-label="用户评价者孙小禾的头像插画"><rect width="40" height="40" fill="#4f9bc4"/><circle cx="20" cy="16" r="7" fill="#f4fbff"/><path d="M7 40c1.5-8 6.5-12 13-12s11.5 4 13 12z" fill="#f4fbff"/></svg>
+          </div>
+          <div>
+            <div class="ml-comment-name">孙小禾</div>
+            <div class="ml-comment-role">农产品合作社 · 理事长</div>
+          </div>
+          <span class="ml-stars">★★★★☆</span>
+        </div>
+        <p>我们规模不大，本来以为用不上系统。后来看了轻量化部署那期，先从两个品类试起来，现在商超客户验收时要看扫码记录，我们直接就能给，谈合作顺利多了。</p>
+        <time>2026-11-09</time>
+      </article>
+
+      <article class="ml-comment">
+        <div class="ml-comment-head">
+          <div class="ml-avatar">
+            <svg viewBox="0 0 40 40" role="img" aria-label="用户评价者周敏的头像插画"><rect width="40" height="40" fill="#0f2c46"/><circle cx="20" cy="16" r="7" fill="#d9ecf5"/><path d="M7 40c1.5-8 6.5-12 13-12s11.5 4 13 12z" fill="#d9ecf5"/></svg>
+          </div>
+          <div>
+            <div class="ml-comment-name">周敏</div>
+            <div class="ml-comment-role">独立内容创作者</div>
+          </div>
+          <span class="ml-stars">★★★★★</span>
+        </div>
+        <p>做工业类内容不容易，这个社区的选题角度很实用。我照着做了两期溯源科普，播放比平时高出三倍，评论区还来了几个真实的工厂用户交流。</p>
+        <time>2026-11-06</time>
+      </article>
+
+      <article class="ml-comment">
+        <div class="ml-comment-head">
+          <div class="ml-avatar">
+            <svg viewBox="0 0 40 40" role="img" aria-label="用户评价者高远的头像插画"><rect width="40" height="40" fill="#0f8a6b"/><circle cx="20" cy="16" r="7" fill="#eafaf3"/><path d="M7 40c1.5-8 6.5-12 13-12s11.5 4 13 12z" fill="#eafaf3"/></svg>
+          </div>
+          <div>
+            <div class="ml-comment-name">高远</div>
+            <div class="ml-comment-role">调味品企业 · 信息化经理</div>
+          </div>
+          <span class="ml-stars">★★★★☆</span>
+        </div>
+        <p>系统稳定是我们最看重的。上线一年多，产线断网的情况遇到过两次，离线补传都正常，没有出现码重复。希望后续能开放更多导出字段的配置。</p>
+        <time>2026-11-03</time>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 企业动态 + 合作 ===== -->
+<section class="ml-section ml-anchor" id="ml-updates" aria-labelledby="ml-updates-title">
+  <div class="ml-wrap">
+    <div class="ml-head">
+      <div class="ml-kicker">Newsroom · 企业动态</div>
+      <h2 id="ml-updates-title">一物一码溯源系统官方发布与更新日志</h2>
+      <p>产品迭代、内容更新与行业活动的最新进展，全部由官方渠道对外发布，欢迎持续关注。</p>
+    </div>
+
+    <div class="ml-news-list" style="margin-bottom:34px;">
+      <article class="ml-news-item">
+        <span class="ml-news-date">2026-11-22</span>
+        <div>
+          <h3>溯源系统 v4.2 正式发布<span>系统更新</span></h3>
+          <p>新增多级包装关联与一码双查能力，优化离线补传队列，产线赋码节拍提升约 12%。</p>
+        </div>
+        <span class="ml-news-more">阅读全文 →</span>
+      </article>
+      <article class="ml-news-item">
+        <span class="ml-news-date">2026-11-18</span>
+        <div>
+          <h3>第 6 期溯源实战训练营开放报名<span>比赛报名</span></h3>
+          <p>面向制造企业质量与信息化负责人，四天线上课程加一次产线实操演练，限量 120 席。</p>
+        </div>
+        <span class="ml-news-more">阅读全文 →</span>
+      </article>
+      <article class="ml-news-item">
+        <span class="ml-news-date">2026-11-12</span>
+        <div>
+          <h3>《渠道流向白皮书 2026》开放下载<span>官方发布</span></h3>
+          <p>汇总 36 个快消品牌的流向管理实践，含可复用的指标定义与预警规则模板。</p>
+        </div>
+        <span class="ml-news-more">阅读全文 →</span>
+      </article>
+      <article class="ml-news-item">
+        <span class="ml-news-date">2026-11-05</span>
+        <div>
+          <h3>与三家区域包装企业达成生态合作<span>合作动态</span></h3>
+          <p>在赋码设备、标签材料与现场实施三个环节形成互补，提升区域客户的交付效率。</p>
+        </div>
+        <span class="ml-news-more">阅读全文 →</span>
+      </article>
+    </div>
+
+    <div class="ml-partner-grid">
+      <div class="ml-partner"><b>恒信包装</b><span>标签材料与印刷工艺合作</span></div>
+      <div class="ml-partner"><b>锐码设备</b><span>工业喷码与激光赋码</span></div>
+      <div class="ml-partner"><b>云栈数据</b><span>数据中台与接口对接</span></div>
+      <div class="ml-partner"><b>安途物流</b><span>冷链温控数据回传</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="ml-section" aria-labelledby="ml-cta-title">
+  <div class="ml-wrap">
+    <div class="ml-cta">
+      <div>
+        <h2 id="ml-cta-title">把你的溯源实践，变成社区里被看见的精品内容</h2>
+        <p>无论你是企业实施负责人、产线工程师还是独立创作者，都欢迎上传真实案例、教程与复盘。官方将为优质投稿提供高清转码、首页推荐与专题收录，让经验在更多企业里生根。</p>
+      </div>
+      <div class="ml-cta-actions">
+        <a class="ml-btn-light" href="#" data-ml-modal="submit">立即投稿 / 报名</a>
+        <a class="ml-btn-line" href="#ml-faq">查看投稿规则</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="ml-section ml-section-alt ml-anchor" id="ml-faq" aria-labelledby="ml-faq-title">
+  <div class="ml-wrap">
+    <div class="ml-head">
+      <div class="ml-kicker">FAQ · 常见问题</div>
+      <h2 id="ml-faq-title">关于一物一码溯源系统的常见疑问</h2>
+      <p>以下问题来自客户咨询与社区留言的高频整理，若仍需进一步了解，可通过页面底部联系方式咨询官方团队。</p>
+    </div>
+
+    <div class="ml-faq-grid">
+      <details class="ml-faq" open>
+        <summary>一套产品一物一码溯源系统从立项到上线需要多久？</summary>
+        <p>通常为 8 至 12 周。单条产线试点一般在 4 周内完成赋码改造与联调，剩余时间用于码库规则确认、系统接口对齐、流程培训与验收。若涉及多个工厂或复杂的包装层级，周期会相应延长，具体以实施评估结果为准。</p>
+      </details>
+      <details class="ml-faq">
+        <summary>我们已经用了批次追溯，还需要上单品码吗？</summary>
+        <p>两者不冲突。批次追溯适合满足基础合规与批量召回，单品码则能精确到最小销售单元的流向与查询记录。若企业存在防窜管理、消费者互动或高价值产品的防伪需求，单品码通常更有价值。建议从销量最稳定的单品开始试点，再逐步扩展。</p>
+      </details>
+      <details class="ml-faq">
+        <summary>赋码改造会影响现有产线节拍吗？</summary>
+        <p>合理选型下影响可控。我们会在方案阶段进行节拍测算，并对喷码位置、采集方式与剔除逻辑做针对性设计。多数客户的赋码节拍与原有包装节拍匹配，改造主要集中在采集工位与软件对接，实际停机时间可压缩到单个班次以内。</p>
+      </details>
+      <details class="ml-faq">
+        <summary>扫码数据归谁所有，能否导出？</summary>
+        <p>码库与扫码数据归企业所有。平台提供标准格式的数据导出接口，支持按时间、区域、品类等维度筛选。涉及消费者个人信息的字段会按合规要求脱敏处理，企业可在后台配置数据的留存周期与访问权限。</p>
+      </details>
+      <details class="ml-faq">
+        <summary>系统能否与我们现有的 ERP 和 MES 对接？</summary>
+        <p>可以。我们采用事件驱动加标准接口的方式与异构系统协同，常见对接点包括工单同步、赋码事件回传、装箱关联与出入库流向。实施团队会提供接口说明与联调支持，企业侧通常只需开放相应接口权限即可。</p>
+      </details>
+      <details class="ml-faq">
+        <summary>中小企业预算有限，是否适合现在就上系统？</summary>
+        <p>适合分阶段投入。建议先选择一个标准化程度高的品类，跑通赋码、关联、查询的核心闭环，再根据数据反馈决定是否扩展到更多品类或增加营销能力。轻量化方案的初始投入相对可控，也更利于团队积累操作经验。</p>
+      </details>
+      <details class="ml-faq">
+        <summary>如何向官方网站投稿或参与训练营？</summary>
+        <p>可通过页面中的投稿入口提交作品信息与联系方式，编辑部会在 3 个工作日内回复。训练营报名需填写企业与岗位信息，审核通过后会收到课程安排与实操准备清单。原创内容经采用后将纳入专题企划并获得首页推荐机会。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 页脚 ===== -->
+<footer class="ml-footer">
+  <div class="ml-wrap">
+    <div class="ml-footer-grid">
+      <div>
+        <div class="ml-brand" style="gap:11px;">
+          <svg class="ml-brand-mark" viewBox="0 0 64 64" role="img" aria-label="码链溯源页脚品牌标识">
+            <rect width="64" height="64" rx="16" fill="#123a58"/>
+            <path d="M14 20h8v8h-8zm0 16h8v8h-8zm14-16h8v8h-8zm14 0h8v8h-8zm0 16h8v8h-8zm0 8h8v8h-8zm-14 0h8v8h-8z" fill="#18b58a"/>
+          </svg>
+          <span class="ml-brand-name">码链溯源<small>TRACE CODE</small></span>
+        </div>
+        <p class="ml-footer-desc">码链溯源官方网站，专注产品一物一码溯源系统的企业级平台。我们以原创高清视频与持续运营的内容社区，为制造企业、品牌方与创作者搭建值得信赖的溯源知识生态。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#ml-focus">焦点内容</a></li>
+          <li><a href="#ml-videos">溯源视频</a></li>
+          <li><a href="#ml-insight">关键词解析</a></li>
+          <li><a href="#ml-topics">专题企划</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>社区与创作</h4>
+        <ul>
+          <li><a href="#ml-authors">创作者矩阵</a></li>
+          <li><a href="#ml-rank">数据榜单</a></li>
+          <li><a href="#ml-concept">图文索引</a></li>
+          <li><a href="#" data-ml-modal="submit">投稿入口</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于官方</h4>
+        <ul>
+          <li><a href="#ml-updates">企业动态</a></li>
+          <li><a href="#ml-faq">常见问题</a></li>
+          <li><a href="#" data-ml-modal="contact">联系我们</a></li>
+          <li><a href="#" data-ml-modal="submit">预约演示</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ml-footer-bottom">
+      <span>© 2026 码链溯源官方网站 · 版权所有 · 持续运营中</span>
+      <span class="ml-foot-links">
+        <a href="#ml-top">返回顶部</a>
+        <span>备案号：浙ICP备2026018842号</span>
+        <span>增值电信业务经营许可证：浙B2-20260417</span>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<button class="ml-top" id="ml-top-btn" type="button" aria-label="回到顶部">↑</button>
+<div class="ml-toast" id="ml-toast" role="status" aria-live="polite"></div>
+
+<div class="ml-modal-mask" id="ml-modal-mask" aria-hidden="true">
+  <div class="ml-modal" role="dialog" aria-modal="true" aria-labelledby="ml-modal-title">
+    <div class="ml-modal-head">
+      <h3 id="ml-modal-title">投稿 / 报名</h3>
+      <button class="ml-modal-close" id="ml-modal-close" type="button" aria-label="关闭弹窗">✕</button>
+    </div>
+    <div class="ml-modal-body" id="ml-modal-body"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- 工具 ---------- */
+  var toastEl = document.getElementById("ml-toast");
+  var toastTimer = null;
+  function toast(msg){
+    if(!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add("ml-show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove("ml-show"); }, 2200);
+  }
+
+  /* ---------- 移动端导航 ---------- */
+  var burger = document.getElementById("ml-burger");
+  var nav = document.getElementById("ml-nav");
+  if(burger && nav){
+    burger.addEventListener("click", function(){
+      var open = nav.classList.toggle("ml-open");
+      burger.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    nav.addEventListener("click", function(e){
+      if(e.target.tagName === "A"){
+        nav.classList.remove("ml-open");
+        burger.setAttribute("aria-expanded","false");
+      }
+    });
+  }
+
+  /* ---------- 搜索前端反馈 ---------- */
+  var searchInput = document.getElementById("ml-search-input");
+  var searchBtn = document.getElementById("ml-search-btn");
+  var searchFeedback = document.getElementById("ml-search-feedback");
+  var searchPool = [
+    "产线赋码","一码双查","防窜管理","农产品溯源","渠道流向","扫码页设计",
+    "赋码设备","质检报告","召回演练","轻量部署","数据看板","包装关联"
+  ];
+  function doSearch(){
+    var kw = (searchInput.value || "").trim();
+    if(!searchFeedback) return;
+    if(!kw){
+      searchFeedback.textContent = "请输入关键词，例如：赋码、防窜、扫码页";
+      searchFeedback.classList.add("ml-show");
+      return;
+    }
+    var hit = searchPool.filter(function(item){ return item.indexOf(kw) > -1 || kw.indexOf(item) > -1; });
+    if(hit.length){
+      searchFeedback.textContent = "在官方网站找到 " + hit.length + " 个相关主题：" + hit.slice(0,4).join("、");
+    }else{
+      searchFeedback.textContent = "暂未收录「" + kw + "」的专题页，已为你跳转至关键词解析板块，可提交选题建议。";
+      var target = document.getElementById("ml-insight");
+      if(target) target.scrollIntoView({behavior:"smooth", block:"start"});
+    }
+    searchFeedback.classList.add("ml-show");
+  }
+  if(searchBtn && searchInput){
+    searchBtn.addEventListener("click", doSearch);
+    searchInput.addEventListener("keydown", function(e){
+      if(e.key === "Enter"){ e.preventDefault(); doSearch(); }
+    });
+  }
+
+  /* ---------- 点赞 / 收藏 ---------- */
+  document.addEventListener("click", function(e){
+    var likeBtn = e.target.closest("[data-ml-like]");
+    if(likeBtn){
+      var numEl = likeBtn.querySelector("[data-ml-like-num]");
+      var on = likeBtn.classList.toggle("ml-on");
+      if(numEl){
+        var base = parseInt(numEl.getAttribute("data-base") || numEl.textContent.replace(/,/g,""), 10) || 0;
+        numEl.setAttribute("data-base", base);
+        numEl.textContent = on ? (base + 1).toLocaleString("en-US") : base.toLocaleString("en-US");
+      }
+      toast(on ? "已点赞，感谢你的支持" : "已取消点赞");
+      return;
+    }
+
+    var favBtn = e.target.closest("[data-ml-fav]");
+    if(favBtn){
+      var favOn = favBtn.classList.toggle("ml-on");
+      favBtn.textContent = favOn ? "♥ 已收藏" : "♡ 收藏";
+      toast(favOn ? "已加入收藏，可在个人中心查看" : "已取消收藏");
+      return;
+    }
+
+    var copyBtn = e.target.closest("[data-ml-copy]");
+    if(copyBtn){
+      var link = "https://tracecode.example.com/article/" + Math.random().toString(36).slice(2, 8);
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(link).then(function(){
+          toast("链接已复制，可分享给同事参考");
+        }, function(){
+          toast("复制失败，请手动选择内容复制");
+        });
+      }else{
+        toast("当前环境不支持自动复制，请手动复制地址");
+      }
+      return;
+    }
+
+    var authorBtn = e.target.closest("[data-ml-author]");
+    if(authorBtn){
+      openModal("author", authorBtn.getAttribute("data-ml-author"));
+      return;
+    }
+
+    var modalTrigger = e.target.closest("[data-ml-modal]");
+    if(modalTrigger){
+      e.preventDefault();
+      openModal(modalTrigger.getAttribute("data-ml-modal"));
+      return;
+    }
+  });
+
+  /* ---------- 回到顶部 ---------- */
+  var topBtn = document.getElementById("ml-top-btn");
+  window.addEventListener("scroll", function(){
+    if(!topBtn) return;
+    if(window.scrollY > 520){ topBtn.classList.add("ml-show"); }
+    else{ topBtn.classList.remove("ml-show"); }
+  }, {passive:true});
+  if(topBtn){
+    topBtn.addEventListener("click", function(){
+      window.scrollTo({top:0, behavior:"smooth"});
+    });
+  }
+
+  /* ---------- 弹窗 ---------- */
+  var mask = document.getElementById("ml-modal-mask");
+  var modalTitle = document.getElementById("ml-modal-title");
+  var modalBody = document.getElementById("ml-modal-body");
+  var modalClose = document.getElementById("ml-modal-close");
+
+  var modalContent = {
+    submit: {
+      title: "投稿 / 报名",
+      html: '<form id="ml-submit-form">' +
+        '<div class="ml-field"><label for="ml-f-name">称呼</label><input id="ml-f-name" type="text" placeholder="请输入你的称呼" required></div>' +
+        '<div class="ml-field"><label for="ml-f-org">企业 / 机构</label><input id="ml-f-org" type="text" placeholder="例如：某某食品有限公司"></div>' +
+        '<div class="ml-field"><label for="ml-f-type">参与类型</label><select id="ml-f-type"><option>视频投稿</option><option>训练营报名</option><option>预约方案演示</option><option>选题建议</option></select></div>' +
+        '<div class="ml-field"><label for="ml-f-msg">补充说明</label><textarea id="ml-f-msg" placeholder="可简要说明你的行业、产线规模或想咨询的问题"></textarea></div>' +
+        '<p class="ml-form-tip">提交后编辑部将在 3 个工作日内通过你留下的联系方式回复。</p>' +
+        '<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;">' +
+        '<button class="ml-btn-primary" type="submit">提交</button>' +
+        '<button class="ml-btn-ghost" type="button" data-ml-close>取消</button>' +
+        '</div></form>'
+    },
+    comment: {
+      title: "发表评论",
+      html: '<form id="ml-comment-form">' +
+        '<div class="ml-field"><label for="ml-c-name">昵称</label><input id="ml-c-name" type="text" placeholder="展示在评论区的昵称" required></div>' +
+        '<div class="ml-field"><label for="ml-c-text">评论内容</label><textarea id="ml-c-text" placeholder="说说你对这期溯源内容的看法…" required></textarea></div>' +
+        '<p class="ml-form-tip">友善、具体的评论更容易被作者看到。</p>' +
+        '<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;">' +
+        '<button class="ml-btn-primary" type="submit">发布评论</button>' +
+        '<button class="ml-btn-ghost" type="button" data-ml-close>取消</button>' +
+        '</div></form>'
+    },
+    contact: {
+      title: "联系官方团队",
+      html: '<p>如果你正在评估产品一物一码溯源系统，欢迎通过以下方式与官方团队取得联系：</p>' +
+        '<ul style="margin:14px 0 0;display:flex;flex-direction:column;gap:10px;font-size:14px;">' +
+        '<li><b style="color:#0f2c46;">方案咨询：</b>工作日 9:00 — 18:30，可预约线上演示</li>' +
+        '<li><b style="color:#0f2c46;">内容合作：</b>投稿与专题共创请走投稿入口</li>' +
+        '<li><b style="color:#0f2c46;">培训报名：</b>溯源实战训练营每季度开放一期</li>' +
+        '</ul>' +
+        '<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:20px;">' +
+        '<button class="ml-btn-primary" type="button" data-ml-modal="submit">留言咨询</button>' +
+        '<button class="ml-btn-ghost" type="button" data-ml-close>关闭</button>' +
+        '</div>'
+    },
+    author: {
+      title: "创作者档案",
+      html: '<p>该创作者长期在码链溯源官方网站发布产品一物一码溯源系统相关原创内容，擅长将产线、渠道与数据环节的实践经验整理成可复用的方法。</p>' +
+        '<p style="margin-top:10px;">你可以在创作者矩阵板块查看完整简介，或通过投稿入口申请与其进行内容共创。</p>' +
+        '<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:20px;">' +
+        '<button class="ml-btn-primary" type="button" data-ml-modal="submit">申请内容共创</button>' +
+        '<button class="ml-btn-ghost" type="button" data-ml-close>关闭</button>' +
+        '</div>'
+    }
+  };
+
+  function openModal(key, extra){
+    if(!mask || !modalBody) return;
+    var conf = modalContent[key] || modalContent.submit;
+    if(modalTitle) modalTitle.textContent = conf.title;
+    modalBody.innerHTML = conf.html;
+    if(key === "author" && extra){
+      if(modalTitle) modalTitle.textContent = extra + " · 创作者档案";
+    }
+    mask.classList.add("ml-show");
+    mask.setAttribute("aria-hidden","false");
+    document.body.style.overflow = "hidden";
+    var firstField = modalBody.querySelector("input,textarea");
+    if(firstField){ setTimeout(function(){ firstField.focus(); }, 220); }
+  }
+
+  function closeModal(){
+    if(!mask) return;
+    mask.classList.remove("ml-show");
+    mask.setAttribute("aria-hidden","true");
+    document.body.style.overflow = "";
+  }
+
+  if(modalClose){ modalClose.addEventListener("click", closeModal); }
+  if(mask){
+    mask.addEventListener("click", function(e){
+      if(e.target === mask) closeModal();
+    });
+  }
+  document.addEventListener("keydown", function(e){
+    if(e.key === "Escape") closeModal();
+  });
+
+  document.addEventListener("click", function(e){
+    if(e.target.closest("[data-ml-close]")){ closeModal(); return; }
+    if(e.target.closest("#ml-submit-form [type=submit]")){ /* 由提交事件处理 */ }
+  });
+
+  document.addEventListener("submit", function(e){
+    if(e.target.id === "ml-submit-form"){
+      e.preventDefault();
+      closeModal();
+      toast("提交成功，官方团队会尽快与你联系");
+    }
+    if(e.target.id === "ml-comment-form"){
+      e.preventDefault();
+      closeModal();
+      toast("评论已提交，审核通过后将展示在评论区");
+    }
+  });
+
+  /* ---------- FAQ 手风琴（一次只开一个，保持轻量） ---------- */
+  var faqs = Array.prototype.slice.call(document.querySelectorAll(".ml-faq"));
+  faqs.forEach(function(item){
+    item.addEventListener("toggle", function(){
+      if(item.open){
+        faqs.forEach(function(other){
+          if(other !== item) other.open = false;
+        });
+      }
+    });
+  });
+
+  /* ---------- 数字滚动 ---------- */
+  var statEls = Array.prototype.slice.call(document.querySelectorAll(".ml-hero-stats .ml-stat b"));
+  var statPlayed = false;
+  function playStats(){
+    if(statPlayed) return;
+    statPlayed = true;
+    statEls.forEach(function(el){
+      var unitEl = el.querySelector("span");
+      var unit = unitEl ? unitEl.outerHTML : "";
+      var raw = el.textContent.replace(/[^0-9.]/g, "");
+      var target = parseFloat(raw);
+      if(isNaN(target)) return;
+      var decimals = (raw.split(".")[1] || "").length;
+      var start = null, dur = 1100;
+      function step(ts){
+        if(!start) start = ts;
+        var p = Math.min((ts - start) / dur, 1);
+        var eased = 1 - Math.pow(1 - p, 3);
+        var val = (target * eased).toFixed(decimals);
+        el.innerHTML = val + unit;
+        if(p < 1) requestAnimationFrame(step);
+        else el.innerHTML = raw + unit;
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  if("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){ playStats(); io.disconnect(); }
+      });
+    }, {threshold:0.35});
+    var heroStats = document.querySelector(".ml-hero-stats");
+    if(heroStats) io.observe(heroStats);
+  }else{
+    playStats();
+  }
+})();
+</script>
+</body>
+            </html>
